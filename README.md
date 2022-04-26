@@ -1,6 +1,6 @@
 # Humanitarian GeoData Repository (HGDR)
 ## Contexte
-Depuis plusieurs année, INSER collabore avec des administrations et des organisations actives dans le domaine humanitaire ou la gestion des crises, notamment le CICR, MSF et le CSH (Corps suisse d'aide humanitaire).
+Depuis plusieurs année, [INSER](https://www.inser.ch/fr) collabore avec des administrations et des organisations actives dans le domaine humanitaire ou la gestion des crises, notamment le [CICR](https://www.icrc.org/fr), [MSF](https://www.msf.ch/) et le (CSA)[https://www.eda.admin.ch/deza/fr/home/ddc/organisation/domaines/aide-humanitaire.html] (Corps suisse d'aide humanitaire).
  
 Pour toutes ces organisations, les géodonnées font partie des bases d'une mission. Elles doivent être disponibles rapidement lors de la préparation de la mission, et en appui des personnels envoyés sur le terrain.
  
@@ -13,7 +13,7 @@ Actuellement, de nombreuses sources de géodonnées sont disponibles pour les hu
  - [Mapaction](https://mapaction.org/)
 
  
-En cas de déploiement en urgence, on constate souvent que l'accès à ces sources de données n'est pas aussi simple qu'il devrait être. Les liens ne sont plus valables, les tokens sont à rafraîchir, les serveurs ne sont plus fonctionnels par arrêt de leur financement [c'est actuellement le cas de OSMaxx], etc…
+En cas de déploiement en urgence, on constate souvent que l'accès à ces sources de données n'est pas aussi simple qu'il devrait être. Les liens ne sont plus valables, les tokens sont à rafraîchir, les serveurs ne sont plus fonctionnels par arrêt de leur financement c'est actuellement le cas de [OSMaxx](https://osmaxx.hsr.ch/), etc…
 Au final, la récupération de données de base consomme beaucoup de temps alors qu'elle devrait être simple.
  
  
@@ -23,7 +23,7 @@ Le projet du HGDR (Humanitarian GeoData Repository) consiste à s'assurer de dis
  
 ## Composantes du projet
 Pour fonctionner, le système doit s'appuyer sur des composantes automatisées et hébergées sur le cloud.
-L'ETL (FME Cloud) joue un rôle central car:
+L'[ETL](https://fr.wikipedia.org/wiki/Extract-transform-load) ([FME Cloud](https://www.safe.com/fme/fme-cloud/)) joue un rôle central car:
 
  - Il visite régulièrement les sources de données surveillées et télécharge les données
  - Il est aussi utilisé pour appliquer les outils de transformation des données (voir plus bas)
@@ -42,13 +42,13 @@ Des outils sont mis à disposition, par exemple:
 
  
 ## Partenaires du projet
-Le projet est essentiellement soutenu dans son démarrage par le CSA.
-Une 1ère prise de température a montré un intérêt potentiel auprès du CICR (Yann Rebois).
-Un tel contact doit encore être pris avec MSF (Ken Bragg).
-Une discussion a eu lieu avec ESRI (Oliver Cottray, Humanitarian) qui suit le projet d'un bon œil.
+Le projet est essentiellement soutenu dans son démarrage par le [CSA](https://www.eda.admin.ch/deza/fr/home/ddc/organisation/domaines/aide-humanitaire.html).
+Une 1ère prise de température a montré un intérêt potentiel auprès du [CICR](https://www.icrc.org/fr) (Yann Rebois).
+Un tel contact doit encore être pris avec [MSF](https://www.msf.ch/) (Ken Bragg).
+Une discussion a eu lieu avec [ESRI](https://www.esri.ch/fr-ch/home) (Oliver Cottray, Humanitarian) qui suit le projet d'un bon œil.
  
-Des contacts relatifs à une collaboration opérationnelle vont avoir lieu avec Mapaction et CartONG.
+Des contacts relatifs à une collaboration opérationnelle vont avoir lieu avec [Mapaction](https://mapaction.org/) et [CartONG](https://cartong.org/fr).
  
-INSER assume le lead du projet. Il met à disposition du projet son infrastructure FME Cloud, au moins pour la phase de développement.
+[INSER](https://www.inser.ch/fr) assume le lead du projet. Il met à disposition du projet son infrastructure [FME Cloud](https://www.safe.com/fme/fme-cloud/), au moins pour la phase de développement.
 
-![Drag Racing](concept_HGDR.png)
+![Concept du Projet](concept_HGDR.png)
