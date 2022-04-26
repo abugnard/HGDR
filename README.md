@@ -51,4 +51,4 @@ Des contacts relatifs à une collaboration opérationnelle vont avoir lieu avec 
  
 [INSER](https://www.inser.ch/fr) assume le lead du projet. Il met à disposition du projet son infrastructure [FME Cloud](https://www.safe.com/fme/fme-cloud/), au moins pour la phase de développement.
 
-![Concept du Projet](Picture3.png)
+![Concept du Projet](Picture4.png)
