@@ -1,6 +1,6 @@
 # Humanitarian GeoData Repository (HGDR)
 ## Contexte
-Depuis plusieurs année, [INSER](https://www.inser.ch/fr) collabore avec des administrations et des organisations actives dans le domaine humanitaire ou la gestion des crises, notamment le [CICR](https://www.icrc.org/fr), [MSF](https://www.msf.ch/) et le (CSA)[https://www.eda.admin.ch/deza/fr/home/ddc/organisation/domaines/aide-humanitaire.html] (Corps suisse d'aide humanitaire).
+Depuis plusieurs année, [INSER](https://www.inser.ch/fr) collabore avec des administrations et des organisations actives dans le domaine humanitaire ou la gestion des crises, notamment le [CICR](https://www.icrc.org/fr), [MSF](https://www.msf.ch/) et le [CSA](https://www.eda.admin.ch/deza/fr/home/ddc/organisation/domaines/aide-humanitaire.html) (Corps suisse d'aide humanitaire).
  
 Pour toutes ces organisations, les géodonnées font partie des bases d'une mission. Elles doivent être disponibles rapidement lors de la préparation de la mission, et en appui des personnels envoyés sur le terrain.
  
