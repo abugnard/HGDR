@@ -7,10 +7,10 @@ Pour toutes ces organisations, les géodonnées font partie des bases d'une miss
 ## Diagnostic
 Actuellement, de nombreuses sources de géodonnées sont disponibles pour les humanitaires, notamment sur les plateformes suivantes:
 
- - Hdx https://data.humdata.org/
- - OSM (au travers de Geofabrik ou OSMaxx par exemple)
- - ESRI humanitarian data hub https://explore-humanitarian.hub.arcgis.com/
- - Mapaction https://mapaction.org/
+ - [Hdx](https://data.humdata.org/)
+ - [OSM](https://www.openstreetmap.org/)(au travers de [Geofabrik](https://download.geofabrik.de) ou [OSMaxx](https://osmaxx.hsr.ch/) par exemple)
+ - ESRI humanitarian data [hub](https://explore-humanitarian.hub.arcgis.com/)
+ - [Mapaction](https://mapaction.org/)
 
  
 En cas de déploiement en urgence, on constate souvent que l'accès à ces sources de données n'est pas aussi simple qu'il devrait être. Les liens ne sont plus valables, les tokens sont à rafraîchir, les serveurs ne sont plus fonctionnels par arrêt de leur financement [c'est actuellement le cas de OSMaxx], etc…
@@ -49,4 +49,6 @@ Une discussion a eu lieu avec ESRI (Oliver Cottray, Humanitarian) qui suit le pr
  
 Des contacts relatifs à une collaboration opérationnelle vont avoir lieu avec Mapaction et CartONG.
  
-INSER assume le lead du projet. Il met à disposition du projet son infrastructure FME Cloud, au moins pour la phase de développement. 
+INSER assume le lead du projet. Il met à disposition du projet son infrastructure FME Cloud, au moins pour la phase de développement.
+
+![Drag Racing](concept_HGDR.png)
