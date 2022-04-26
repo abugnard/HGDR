@@ -8,7 +8,7 @@ Pour toutes ces organisations, les géodonnées font partie des bases d'une miss
 Actuellement, de nombreuses sources de géodonnées sont disponibles pour les humanitaires, notamment sur les plateformes suivantes:
 
  - [Hdx](https://data.humdata.org/)
- - [OSM](https://www.openstreetmap.org/)(au travers de [Geofabrik](https://download.geofabrik.de) ou [OSMaxx](https://osmaxx.hsr.ch/) par exemple)
+ - [OSM](https://www.openstreetmap.org/) (au travers de [Geofabrik](https://download.geofabrik.de) ou [OSMaxx](https://osmaxx.hsr.ch/) par exemple)
  - ESRI humanitarian data [hub](https://explore-humanitarian.hub.arcgis.com/)
  - [Mapaction](https://mapaction.org/)
 
