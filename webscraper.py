@@ -5,7 +5,6 @@
 # Import libraries
 import requests
 from bs4 import BeautifulSoup
-import tabulate
 import re
 import pandas as pd
 import dateutil.parser as dparser
@@ -26,7 +25,6 @@ def find_link(dl_list):
         region.append(region_url)
 
     dict_country = {k: v for v, k in enumerate(region)}
-    publications_wrappers = soup.find_all('td', class_='subregion')
 
     for s in region:
         URL_region = 'https://download.geofabrik.de/' + s.lower() + '.html'
@@ -50,9 +48,6 @@ def find_link(dl_list):
 
         dict_country[s] = country
 
-    data = dict_country
-    table = tabulate.tabulate(data, tablefmt='html', headers=region)
-    table
 
     rows = list(dict_country.values())
     rows_flatten = [j for sub in rows for j in sub]
@@ -75,6 +70,7 @@ def find_link(dl_list):
                 users_choice_down = data2dl
                 URL_ground[
                     i] = 'https://download.geofabrik.de/' + users_choice.lower() + '/' + users_choice_down.lower() + '.html'
+                print('{}) {}'.format(i + 1, dl_list[i]))
                 print(URL_ground[i])
 
                 r_ground = requests.get(URL_ground[i])
@@ -88,14 +84,50 @@ def find_link(dl_list):
                 if type(r1) == list:
                     r1 = r1[0]
                 last_update[i] = dparser.parse(str(r1), fuzzy=True)
-                print("Last Update the {:%d, %b %Y at %H:%M:%S}".format(last_update[i]))
+                print("Last Update the {:%d, %b %Y at %H:%M:%S}\n".format(last_update[i]))
+                print('...............................................\n')
+            else:
+                if data2dl.split('/')[0] in dict_country[key]:
+                    if data2dl.split('/')[0] == 'russia':
+                        URL_ground[i] = 'https://download.geofabrik.de/' + data2dl.split('/')[0] + '/' + data2dl.split('/')[1] + '.html'
+                        print('{}) {}'.format(i + 1, dl_list[i]))
+                        print(URL_ground[i])
+                    elif data2dl.split('/')[1] == 'england':
+                        URL_ground[i] = 'https://download.geofabrik.de/europe/great-britain/england/' + data2dl.split('/')[2] + '.html'
+                        print('{}) {}'.format(i + 1, dl_list[i]))
+                    else:
+                        users_choice = key
+                        URL_ground[i] = 'https://download.geofabrik.de/' + users_choice.lower() + '/' +\
+                                        data2dl.split('/')[0] + '/' + data2dl.split('/')[1] + '.html'
+                        print('{}) {}'.format(i + 1, dl_list[i]))
+
+                        print(URL_ground[i])
+
+                    r_ground = requests.get(URL_ground[i])
+                    page_body_ground = r_ground.text
+
+                    soup_ground = BeautifulSoup(page_body_ground, 'html.parser')
+                    last_update_raw = soup_ground.find_all('li')[0]
+
+                    xx = str(last_update_raw)
+                    r1 = re.findall("\d\d\d\d.\d\d.\d\d.\d\d.\d\d.\d\d", xx)
+                    if type(r1) == list:
+                        r1 = r1[0]
+                    last_update[i] = dparser.parse(str(r1), fuzzy=True)
+                    print("Last Update the {:%d, %b %Y at %H:%M:%S}\n".format(last_update[i]))
+                    print('...............................................\n')
 
         i = i + 1
 
-    print('Links for download\n------------------')
+    print('\n\nLinks for download\n------------------')
+
+    filt_link = filter(None, URL_ground)
+    URL_ground = list(set(filt_link))
+    dl_num = len(URL_ground)
 
     url_list = [0] * dl_num
     size_list = [0] * dl_num
+
 
     for i in range(0, dl_num):
         url_dl = URL_ground[i] + '-latest.osm.pbf'
