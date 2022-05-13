@@ -60,10 +60,15 @@ armenia;AM
 azerbaijan;AZ
 bangladesh;BD
 bhutan;BT
+brunei;BN
 cambodia;KH
 china;CN
 east-timor;TL
-gcc-states;GCC
+oman;OM
+saudi-arabia;SA
+kuwait;KW
+united-arab-emirates;AE
+bahrain;BH
 india;IN
 indonesia;ID
 iran;IR
@@ -75,7 +80,7 @@ kazakhstan;KZ
 kyrgyzstan;KG
 laos;LA
 lebanon;LB
-malaysia-singapore-brunei;MYSGBN
+malaysia;MY
 maldives;MV
 mongolia;MN
 myanmar;MM
@@ -87,6 +92,7 @@ russia;RU
 south-korea;KR
 sri-lanka;LK
 syria;SY
+singapore;SG
 taiwan;TW
 tajikistan;TJ
 thailand;TH
@@ -146,6 +152,7 @@ france;FR
 georgia;GE
 germany;DE
 great-britain;GB
+guernsey-jersey;GGJE
 greece;GR
 hungary;HU
 iceland;IS
