@@ -70,6 +70,7 @@ def find_correspondence(country_2_dl):
                 ISO = df_ISO[df_ISO['country'] == dl_list[i]].index
 
             elif ctry2dl.split('/')[0] == 'great-britain':
+
                 if ctry2dl.split('/')[1] == 'england':
 
                     df_EN = pd.read_csv('relation_EN.csv')
@@ -91,7 +92,6 @@ def find_correspondence(country_2_dl):
             else:
                 search_str = unidecode.unidecode(ctry2dl)
                 most_similar = process.extractOne(search_str, df_subregion['State'], scorer=fuzz.WRatio)
-
                 if most_similar[1] <= 90:
                     print('Attention low score for: {}'.format(search_str))
                     best_score = 0
@@ -113,7 +113,6 @@ def find_correspondence(country_2_dl):
         else:
             search_str = unidecode.unidecode(ctry2dl)
             most_similar = process.extractOne(search_str, df_ISO['country'], scorer=fuzz.WRatio)
-
             dl_list[i] = most_similar[0]
 
             ISO = df_ISO[df_ISO['country'] == most_similar[0]].index
@@ -123,5 +122,5 @@ def find_correspondence(country_2_dl):
         else:
             iso_codes = iso_codes + df_ISO['ISO'][ISO[0]] + '_'
         i = i + 1
-
+    dl_list = list(set(dl_list))
     return dl_list, iso_codes

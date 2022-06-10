@@ -19,7 +19,9 @@ Charente-Maritime,poitou-charentes
 Cher,centre
 Corrèze,limousin
 corse-du-Sud,corse
-Haute-corse,corse
+Haute-Corse,corse
+South Corsica,corse
+North Corsica,corse
 Côte-d'Or,bourgogne
 Côtes-d'Armor,bretagne
 Creuse,limousin
@@ -95,8 +97,3 @@ Hauts-de-Seine,ile-de-france
 Seine-St-Denis,ile-de-france
 Val-de-Marne,ile-de-france
 Val-D'Oise,ile-de-france
-Guadeloupe,guadeloupe
-Martinique,martinique
-Guyane,guyane
-La Réunion,reunion
-Mayotte,mayotte

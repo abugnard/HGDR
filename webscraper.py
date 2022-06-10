@@ -115,11 +115,11 @@ def find_link(dl_list):
                         r1 = r1[0]
                     last_update[i] = dparser.parse(str(r1), fuzzy=True)
                     print("Last Update the {:%d, %b %Y at %H:%M:%S}\n".format(last_update[i]))
-                    print('...............................................\n')
+                    print('...............................................')
 
         i = i + 1
 
-    print('\n\nLinks for download\n------------------')
+    print('\nLinks for download (download.geoFabrik.de)\n------------------')
 
     filt_link = filter(None, URL_ground)
     URL_ground = list(set(filt_link))
@@ -174,5 +174,8 @@ def find_link(dl_list):
             file_size = float(found[0])
 
         size_list[i] = file_size
+        print('File size: {} [MB]\n'.format(file_size))
+
+    url_list = list(set(url_list))
 
     return url_list, size_list
