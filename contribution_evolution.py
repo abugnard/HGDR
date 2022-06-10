@@ -24,6 +24,9 @@ def evol_osm(ctry_2_dl):
             ctry2dl = 'Congo-Kinshasa'
         elif ctry2dl == 'Congo-Brazzaville':
             ctry2dl = 'Republic of the Congo'
+        elif ctry2dl.split('/')[0] == 'us-west':
+            ctry2dl = 'us'
+
         cr_el = [0] * 31
         mod_el = [0] * 31
         del_el = [0] * 31

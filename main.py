@@ -17,11 +17,58 @@ import webscraper2
 from contribution_evolution import evol_osm
 from popDens100m import pop100m
 from dest_manager import param_setter
+from statistics_country import stat_compiler
+from basemap import raster_extractor
+from weather_poll_report import print_report
+from weather_poll_report import basemap_test
+
 
 # var = input("Please enter the coordinates of interest (Lat N/Lon E) [ex: 55.34 -32.32]: ")
 
+#USER PARAMETERS
+#-----------------------------------------------------------------------------------------------------------------------
+#Coordinates
+var = '46.43130068279288 6.879302336534448'
 
-var = '50.54567446372534 5.503536742977153'
+
+#Size of the side of the boundingbox (square)
+user_size_square = 25 # [km]
+
+#Basemap for PDF export
+#| Fond de   carte    | bm choice |
+#|--------------------|-----------|
+#| STAMEN             |         0 |
+#| BLUE MARBLE        |         1 |
+#| ARCGIS   STREETMAP |         2 |
+#| OPENTOPMAP         |         3 |
+#| ARCGIS   SATELLITE |         4 |
+#| WATERCOLOR         |         5 |
+#| CARTODB            |         6 |
+#| ARCGIS TOPO        |         7 |
+#| ARCGIS NATGEO      |         8 |
+#| WIKIPEDIA          |         9 |
+
+bm_choice = 6
+
+#feature (OSM) choice:
+
+# features available:
+
+# ______________________________________________________________________________
+# | aerialway | building   | historic  | natural          | railway | waterway |
+# |___________|____________|___________|_________________ |_________|__________|
+# | aeroway   | craft      | landuse   | office           | route   |
+# |___________|____________|___________|_________________ |_________|
+# | amenity   | emergency  | leisure   | place            | shop    |
+# |___________|____________|___________|_________________ |_________|
+# | barrier   | geological | man_made  | power            | sport   |
+# |___________|____________|___________|_________________ |_________|
+# | boundary  | highway    | military  | public_transport | tourism |
+# __________________________________________________________________|
+
+feature_choice = ['highway', 'boundary', 'waterway']
+
+#-----------------------------------------------------------------------------------------------------------------------
 
 Lat = float(var.split(' ')[0])
 Lon = float(var.split(' ')[1])
@@ -42,13 +89,13 @@ user_coord = (Lat, Lon)
 
 # user_size_square = float(input("Size of the bounding box [km]: "))
 
-user_size_square = 50  # [km]
+
 distance = user_size_square / 2
 
 degree = distance / (6378 * (np.pi / 180) * np.cos(user_coord[0] * np.pi / 180))
 
 array_coord = show_map.map_html(user_coord, degree)
-
+basemap_test(array_coord)
 geolocator = Nominatim(user_agent="geoapiExercises")
 
 array_loc = [0] * 25
@@ -101,23 +148,39 @@ for i in range(0, 17):
 
         elif country == 'France':
             subregion = address.get('state', '')
-            if address.get('ISO3166-2-lvl3', '') == 'FR-BL' or address.get('ISO3166-2-lvl3', '') == 'FR-BL' or address.get('ISO3166-2-lvl6', '') == 'FR-BL':
+            if address.get('ISO3166-2-lvl3', '') == 'FR-BL' or address.get('ISO3166-2-lvl3',
+                                                                           '') == 'FR-BL' or address.get(
+                'ISO3166-2-lvl6', '') == 'FR-BL':
                 country = 'Saint Barthelemy'
             elif address.get('state', '') == 'Saint Martin (France)':
                 country = 'Saint Martin'
-            elif address.get('ISO3166-2-lvl4', '') == 'FR-TF' or address.get('ISO3166-2-lvl3', '') == 'FR-TF' or address.get('ISO3166-2-lvl6', '') == 'FR-TF':
+            elif address.get('ISO3166-2-lvl4', '') == 'FR-TF' or address.get('ISO3166-2-lvl3',
+                                                                             '') == 'FR-TF' or address.get(
+                'ISO3166-2-lvl6', '') == 'FR-TF':
                 country = 'France Taaf'
-            elif address.get('ISO3166-2-lvl4', '') == 'FR-MQ' or address.get('ISO3166-2-lvl3', '') == 'FR-MQ' or address.get('ISO3166-2-lvl6', '') == 'FR-MQ':
+            elif address.get('ISO3166-2-lvl4', '') == 'FR-MQ' or address.get('ISO3166-2-lvl3',
+                                                                             '') == 'FR-MQ' or address.get(
+                'ISO3166-2-lvl6', '') == 'FR-MQ':
                 country = 'Martinique'
-            elif address.get('ISO3166-2-lvl4', '') == 'FR-GUA' or address.get('ISO3166-2-lvl3', '') == 'FR-GP' or address.get('ISO3166-2-lvl6', '') == 'FR-GP':
+            elif address.get('ISO3166-2-lvl4', '') == 'FR-GUA' or address.get('ISO3166-2-lvl3',
+                                                                              '') == 'FR-GP' or address.get(
+                'ISO3166-2-lvl6', '') == 'FR-GP':
                 country = 'Guadeloupe'
-            elif address.get('ISO3166-2-lvl4', '') == 'FR-LRE' or address.get('ISO3166-2-lvl3', '') == 'FR-LRE' or address.get('ISO3166-2-lvl6', '') == 'FR-LRE':
+            elif address.get('ISO3166-2-lvl4', '') == 'FR-LRE' or address.get('ISO3166-2-lvl3',
+                                                                              '') == 'FR-LRE' or address.get(
+                'ISO3166-2-lvl6', '') == 'FR-LRE':
                 country = 'Reunion'
-            elif address.get('ISO3166-2-lvl4', '') == 'FR-MAY' or address.get('ISO3166-2-lvl3', '') == 'FR-MAY' or address.get('ISO3166-2-lvl6', '') == 'FR-MAY':
+            elif address.get('ISO3166-2-lvl4', '') == 'FR-MAY' or address.get('ISO3166-2-lvl3',
+                                                                              '') == 'FR-MAY' or address.get(
+                'ISO3166-2-lvl6', '') == 'FR-MAY':
                 country = 'Mayotte'
-            elif address.get('ISO3166-2-lvl4', '') == 'FR-GF' or address.get('ISO3166-2-lvl3', '') == 'FR-GF' or address.get('ISO3166-2-lvl6', '') == 'FR-GF':
+            elif address.get('ISO3166-2-lvl4', '') == 'FR-GF' or address.get('ISO3166-2-lvl3',
+                                                                             '') == 'FR-GF' or address.get(
+                'ISO3166-2-lvl6', '') == 'FR-GF':
                 country = 'Guyane'
-            elif address.get('ISO3166-2-lvl4', '') == 'FR-PF' or address.get('ISO3166-2-lvl3', '') == 'FR-PF' or address.get('ISO3166-2-lvl6', '') == 'FR-PF':
+            elif address.get('ISO3166-2-lvl4', '') == 'FR-PF' or address.get('ISO3166-2-lvl3',
+                                                                             '') == 'FR-PF' or address.get(
+                'ISO3166-2-lvl6', '') == 'FR-PF':
                 country = 'French Polynesia'
             elif address.get('region', '') == 'Saint Pierre and Miquelon':
                 country = 'Saint Pierre and Miquelon'
@@ -141,7 +204,8 @@ for i in range(0, 17):
             subregion = subregion.replace(' kraj', '')
 
         elif country == 'Belgium':
-            subregion = address.get('region', '') + '/' + address.get('municipality', '')
+            subregion = address.get('region', '') + '/' + address.get('municipality', '') + '/' + address.get('village',
+                                                                                                              '')
 
         elif country == 'Norway':
             subregion = address.get('county', '')
@@ -159,11 +223,11 @@ for i in range(0, 17):
         elif country in ['Palestinian Territory', 'Israel']:
             country = 'Israel and Palestine'
 
-        elif country in ['Haiti', 'Dominican Republic']:
-            country = 'Haiti-and-Domrep'
-
         elif country == 'Eswatini':
             country = 'Swaziland'
+
+        elif country == 'Haiti':
+            country == 'Haiti and Dominican Republic'
 
         elif country == 'Poland':
             location = geolocator.reverse(Latitude + "," + Longitude, language="pl")
@@ -222,7 +286,13 @@ for i in range(0, 17):
         elif country == 'Russia':
             array_loc[i] = country + '/' + region
         elif country == 'United States':
-            array_loc[i] = 'us/' + subregion
+            if subregion == 'California':
+                if address.get('county', '') == '':
+                    array_loc[i] = []
+                else:
+                    array_loc[i] = 'us-west/california/' + address.get('county', '').replace(' County', '')
+            else:
+                array_loc[i] = 'us/' + subregion
         elif country == 'United Kingdom':
             if subregion == 'Northern Ireland':
                 array_loc[i] = 'Ireland'
@@ -259,10 +329,8 @@ list_scraper2 = ['Belgium', 'Anguilla', 'Trinidad and Tobago', 'Montserrat', 'Br
                  'Guam', 'Northern Mariana Islands', 'American Samoa', 'Bouvet Island', 'Guadeloupe', 'Martinique',
                  'Guyane', 'Reunion', 'Mayotte', 'Puerto Rico', 'Kuwait', 'Bahrain', 'Qatar', 'United Arab Emirates',
                  'Oman', 'Saudi Arabia', 'Brunei', 'Malaysia', 'Singapore', 'Gibraltar', 'French Polynesia', 'Dominica',
-                 'Haiti', 'Dominican Republic', 'Guernsey', 'Jersey', 'Mexico', 'Canarias','Ceuta', 'Melilla',
-                 'British Indian Ocean Territory']
-
-
+                 'Dominican Republic', 'Guernsey', 'Jersey', 'Mexico', 'Canarias', 'Ceuta', 'Melilla',
+                 'British Indian Ocean Territory', 'Dominican Republic', 'us-west']
 
 land_list = []
 for land in country_2_dl:
@@ -274,24 +342,25 @@ points = [z for z in zip(land_list) if z[0] in list_scraper2]
 list_temp = []
 for i in range(0, len(points)):
     list_temp.append(str(points[i])[2:-3])
-print(country_2_dl)
+
 list_ws1 = [x for x in country_2_dl if x.split('/')[0] not in list_temp]
-print('From GeoFabrik: ')
+print('From GeoFabrik:\n---------------')
 print(list_ws1)
 
 list_ws2 = [x for x in country_2_dl if x.split('/')[0] in list_temp]
-print('From OSM.download: ')
+print('From OSM.download:\n-----------------')
 print(list_ws2)
 
 dl_list, ISO_str1 = url_matcher.find_correspondence(list_ws1)
 
-print('Webscrapping...\n...')
+print('Webscrapping...\n\n...')
 print(
-    '\n\nList of country/country-region to download from GeoFabrik:\n------------------------------------------------------------')
+    '\nList of country/country-region to download from GeoFabrik:\n------------------------------------------------------------')
 link1, size_MB1 = webscraper.find_link(dl_list)
 link2, size_MB2, ISO_str2 = webscraper2.find_link(list_ws2, len(list_ws1))
 
 ISO_str = ISO_str1 + ISO_str2
+
 link = link1 + link2
 size_MB = size_MB1 + size_MB2
 
@@ -310,11 +379,26 @@ with open('pop_dens_result.txt') as f:
     lines = f.readlines()
 
 pop_dens = float(lines[0][3:9])
-print('\nPopulation density of the selected region: {} [capita/km2]'.format(
+print('\nStatistics of the selected region:\n................................')
+print(list_ws1 + list_ws2)
+b_cap, ISO2, ISO3, IDH, Country, Areatot, PopuDens, Population = stat_compiler(list_ws1 + list_ws2)
+
+for i in range(0, len(Country)):
+    print(' - ISO 31662 (alpha2 & alpha3) for {}: {} and {}'.format(Country[i], ISO2[i], ISO3[i]))
+    print(' - Population for {}: {} [cap]'.format(Country[i], Population[i]))
+    print(' - Area for {}: {} [km2]'.format(Country[i], Areatot[i]))
+    print(' - Resulting population density for {}: {} [cap/km2]'.format(Country[i], round(PopuDens[i], 0)))
+    print(' - IDH for {}: {}'.format(Country[i], IDH[i]))
+    print(' - Data per capita for {}: {} [B/capita]'.format(Country[i], b_cap[i]))
+    print('-----------------------------------------------------------\n')
+print('\n - Estimated "BoundingBox" population density : {} [capita/km2]'.format(
     round(pop_dens * (1e6 / (926 * 927 * np.cos(user_coord[0] * np.pi / 180))), 1)))
 
-size_coef = 1.57  # [s/MB] for the basic features (building highway place boundary)
-dens_coeff = 0.075  # [s km2/capita] for the basic features (building highway place boundary)
+mean_IDH = np.nanmean(IDH)
+
+size_coeff = 0.8712  # [s/MB] for the basic features (building highway place boundary)
+dens_coeff = 0.0377  # [s km2/capita] for the basic features (building highway place boundary)
+IDH_coeff = 324.85
 
 df_features = pd.read_csv('feature_factor.csv', sep=',')
 
@@ -323,7 +407,7 @@ basis = df_features['coef'][0] + df_features['coef'][2] + df_features['coef'][15
 
 df_features['relative2basis'] = df_features['coef'] / basis
 
-feature_choice = ['place', 'building', 'highway', 'boundary']
+
 features_all = ['aerialway', 'building', 'historic', 'natural', 'railway', 'waterway', 'aeroway', 'craft', 'landuse',
                 'office', 'route', 'amenity', 'emergency', 'leisure', 'place', 'shop', 'barrier', 'geological',
                 'man_made', 'power', 'sport', 'boundary', 'highway', 'military', 'public_transport', 'tourism']
@@ -335,39 +419,29 @@ for i in range(0, len(feature_choice)):
     comp_time_factor = comp_time_factor + df_features['relative2basis'][pos + 1]
 
 print('\n----------------------------------------\n----------------------------------------')
-print('Size of the downloaded data: {} MB'.format(np.sum(size_MB)))
+print('Size of the data to download: {} MB'.format(np.sum(size_MB)))
 print('Estimated time for OSM data extraction: {}h and {}min'.format(str(datetime.timedelta(seconds=((np.sum(size_MB) *
-                                                                                                      size_coef) + (
+                                                                                                      size_coeff) + (
                                                                                                              pop_dens *
-                                                                                                             dens_coeff))
-                                                                                                    * comp_time_factor))[
-                                                                         0],
+                                                                                                             dens_coeff) + (
+                                                                                                             mean_IDH * IDH_coeff))
+                                                                                                     * comp_time_factor))[
+                                                                             0],
                                                                      str(datetime.timedelta(seconds=((np.sum(size_MB) *
-                                                                                                      size_coef) + (
+                                                                                                      size_coeff) + (
                                                                                                              pop_dens *
-                                                                                                             dens_coeff))
+                                                                                                             dens_coeff) + (
+                                                                                                             mean_IDH * IDH_coeff))
                                                                                                     * comp_time_factor))[
                                                                      2:4]))
 print('----------------------------------------\n----------------------------------------\n')
 
 time_start = time.time()
 
-# features available:
-
-# ______________________________________________________________________________
-# | aerialway | building   | historic  | natural          | railway | waterway |
-# |___________|____________|___________|_________________ |_________|__________|
-# | aeroway   | craft      | landuse   | office           | route   |
-# |___________|____________|___________|_________________ |_________|
-# | amenity   | emergency  | leisure   | place            | shop    |
-# |___________|____________|___________|_________________ |_________|
-# | barrier   | geological | man_made  | power            | sport   |
-# |___________|____________|___________|_________________ |_________|
-# | boundary  | highway    | military  | public_transport | tourism |
-# __________________________________________________________________|
-
-
-param_layer = ' --FEATURETYPES "building highway boundary place"'
+param_layer = ' --FEATURETYPES "'
+for i in range(0, len(feature_choice)):
+    param_layer = param_layer + feature_choice[i] + ' '
+param_layer = param_layer[0:-1] + '"'
 param_link = '"'
 
 # for i in range(0, len(country_2_dl)):
@@ -431,8 +505,6 @@ print('\n-------------------------------------------------------\n')
 
 URL_list_100m, year_100m = pop100m(country_2_dl)
 
-# https://community.safe.com/s/question/0D54Q00008515Q1SAI/fme-python-install-paramiko-expected-an-even-number-of-command-line-arguments-instead-got-9
-
 fme_path = 'fme.exe C:\\Users\\alexandre\\Documents\\HDR\\popDens100m_tif2tif.fmw'
 
 dest100m = ' --DestDataset_GEOTIFF "C:\\Users\\alexandre\\Documents\\HDR\\output_' + ISO_str + '\\' + '02_PopDens"'
@@ -449,12 +521,21 @@ df_area = pd.read_csv('country_area.csv', sep=';').dropna()
 df_area = df_area.drop_duplicates(subset='Country', keep="first")
 
 area = 0
+list_ctry = []
+
+print(list(set(list_ws1 + list_ws2)))
 for ctry in list(set(list_ws1 + list_ws2)):
+    if ctry.split('/')[0] == 'us-west' or 'us':
+        ctry = 'United States'
+    list_ctry.append(ctry.split('/')[0])
+
+for ctry in list(set(list_ctry)):
     search_str = ctry.split('/')[0]
     most_similar = process.extractOne(search_str, df_area['Country'], scorer=fuzz.WRatio)
+
     area = area + float(df_area[df_area['Country'] == most_similar[0]]['Area'])
 
-time_WP = 0.00034 * area
+time_WP = 0.0003531 * area
 
 print('Estimated time for extraction (total area of {} km2): {} [s]\n\n'.format(area, round(time_WP, -1)))
 # sizeMB = surfacekm2/54'301
@@ -467,4 +548,55 @@ elapsed_time = time.strftime('%H:%M:%S', time.gmtime(elapsed_time))
 print('\n\nElapsed time for pop. density: {} hours, {} min, {} sec'.format(elapsed_time[0:2], elapsed_time[3:5],
                                                                            elapsed_time[6:9]))
 
+
+#DEM
+#--------------------------------------------
+fme_path = 'fme.exe C:\\Users\\alexandre\\Documents\\HDR\\DEM_geotiff2geotiff.fmw'
+param_minLON = ' --GEOM_minLON "' + str(array_coord[3]) + '"'
+param_minLAT = ' --GEOM_minLAT "' + str(array_coord[6]) + '"'
+param_maxLON = ' --GEOM_maxLON "' + str(array_coord[5]) + '"'
+param_maxLAT = ' --GEOM_maxLAT "' + str(array_coord[2]) + '"'
+param_dest = ' --DestDataset_GEOTIFF "C:\\Users\\alexandre\\Documents\\HDR\\output_' + ISO_str + '\\' + '03_DEM"'
+
+command_DEM = fme_path + param_dest + param_minLON + param_minLAT + param_maxLON + param_maxLAT + param_ISO
+boundingbox_area = (array_coord[2] - array_coord[6])*111.31709*np.cos(array_coord[0]*np.pi/180)*\
+                   (array_coord[5] - array_coord[3])*111.31709 #km2
+print(command_DEM)
+print('\n\nEstimated time for DEM extraction (total area of {} km2): {} [s]\n\n'.format(boundingbox_area,
+                                                                                    round(boundingbox_area*0.002, 0)))
+time_start = time.time()
+
+os.system(command_DEM)
+time_end = time.time()
+
+elapsed_time = float(time_end) - float(time_start)
+elapsed_time = time.strftime('%H:%M:%S', time.gmtime(elapsed_time))
+print('\n\nElapsed time for DEM extraction: {} hours, {} min, {} sec'.format(elapsed_time[0:2], elapsed_time[3:5],
+                                                                           elapsed_time[6:9]))
+
 # C:\Users\alexandre\AppData\Local\Temp
+print('\n...\n\n Extraction of the basemap:')
+print('...')
+zoom = raster_extractor(array_coord, user_size_square, ISO_str, bm_choice)
+
+#######################
+#meteo
+print_report(user_coord, ISO_str)
+#######################
+
+#######################
+#PDF export
+
+fme_path = 'fme.exe C:\\Users\\alexandre\\Documents\\HDR\\GeospatialPDF.fmw'
+
+param_source1 = ' --SourceDataset_JPEG2000 "C:\\Users\alexandre\Documents\HDR\output_' + ISO_str + '\\' + '04_Basemap' + '\\basemap_' + ISO_str + '.jp2"'
+param_dest = ' --DEST_PDF "output_' + ISO_str + '/"'
+param_zoom = ' --Zoom "' + str(zoom) + '"'
+param_coordx = ' --Coord_LR_x "' + str(array_coord[5]) + '"'
+param_coordy = ' --Coord_LR_y "' + str(array_coord[6]) + '"'
+param_dest2 = ' --DestDataset_PDF2D "DestDataset_PDF2D "output_' + ISO_str + '/$(FILE_name)_export.pdf"'
+param_name = ' --FILE_name "BoundingBox"'
+
+command_pdf = fme_path + param_dest + param_zoom + param_coordx + param_coordy + param_dest2 + param_name
+print(command_pdf)
+os.system(command_pdf)
