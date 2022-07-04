@@ -1,11 +1,11 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files\FME2020.2.1-20806\fme.exe" C:\Users\alexandre\Documents\HDR\popDens_tif2tif.fmw
-#              --SourceDataset_GEOTIFF "C:\Users\alexandre\Documents\HDR\PopDens\ppp_2020_1km_Aggregated.tif"
-#              --DestDataset_GEOTIFF "C:\Users\alexandre\Documents\HDR\PopDens\result"
-#              --DestDataset_TEXTLINE "C:\Users\alexandre\Documents\HDR\PopDens\result\pop_dens_result.txt"
-#              --ISO_code "test2"
+#        "C:\Program Files\FME2020.2.1-20806\fme.exe" C:\Users\alexandre\Documents\HDR\popDens_tif2tifv2.fmw
+#              --SourceDataset_GEOTIFF "C:\Users\alexandre\Documents\HDR\EXEL_FILES\ppp_2020_1km_Aggregated.tif"
+#              --DestDataset_GEOTIFF "C:\Users\alexandre\Documents\HDR\output_CHE\03_Population_Density"
+#              --DestDataset_TEXTLINE "C:\Users\alexandre\Documents\HDR\output_CHE\03_Population_density\pop_dens_BB.txt"
+#              --ISO_code "CHE"
 #              --GEOM "-0.46 51.38 0.11 51.67"
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
@@ -21,8 +21,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="20806"
-#!   FME_DOCUMENT_GUID="024aa05f-551b-430d-9ca3-e46813174973"
-#!   FME_DOCUMENT_PRIORGUID="86a2c7c6-ef3a-49d3-a886-1d0098b3959b,4c3f4eab-5071-40e9-85cb-26f77fd94f76,70875ab8-b3a6-48d1-9801-265e61bcd386,abc4b178-7d43-4e04-9618-6733748d599e,9d028cfa-130b-4113-93c9-963ff1706b34"
+#!   FME_DOCUMENT_GUID="51fd48cf-3913-4611-8c34-613d66f1bcdf"
+#!   FME_DOCUMENT_PRIORGUID="86a2c7c6-ef3a-49d3-a886-1d0098b3959b,4c3f4eab-5071-40e9-85cb-26f77fd94f76,70875ab8-b3a6-48d1-9801-265e61bcd386,abc4b178-7d43-4e04-9618-6733748d599e,9d028cfa-130b-4113-93c9-963ff1706b34,024aa05f-551b-430d-9ca3-e46813174973"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -31,7 +31,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2020.2.1.0 (20201130 - Build 20806 - WIN64)"
-#!   LAST_SAVE_DATE="2022-06-30T12:54:30"
+#!   LAST_SAVE_DATE="2022-06-30T13:40:12"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -50,7 +50,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="375.004 653.132"
+#!   VIEW_POSITION="-106.251 737.507"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -69,7 +69,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="multi_reader_keyword char(50) fme_color char(50) fme_basename char(50) geotiff_tifftag_hostcomputer char(255) geotiff_private_keys{}.type char(6) geotiff_private_keys{}.id integer geotiff_subdataset_name char(255) geotiff_tifftag_yresolution float fme_rotation float geotiff_tifftag_copyright char(255) geotiff_tifftag_xresolution float geotiff_compression_method char(9) geotiff_tifftag_documentname char(255) geotiff_tifftag_imagedescription char(255) fme_primary_axis float geotiff_tifftag_artist char(255) multi_reader_id integer fme_sweep_angle float fme_feature_type char(50) geotiff_tifftag_software char(255) multi_reader_type char(50) geotiff_private_keys{}.value char(255) fme_start_angle float geotiff_interleaving_type char(3) fme_geometry char(50) geotiff_pyramid_level{}.num_columns integer fme_secondary_axis float geotiff_pyramid_num_levels integer fme_fill_color char(50) geotiff_pyramid_level{}.num_rows integer fme_text_string char(50) multi_reader_full_id integer fme_dataset char(50) fme_text_size float geotiff_tifftag_datetime datetime geotiff_photometric_interpretation char(10) geotiff_number_of_bits_per_cell decimal(1,0) fme_type char(50) geotiff_area_or_point char(255) geotiff_subdataset_description char(255) geotiff_type char(255) geotiff_byte_order char(7) geotiff_tifftag_minsamplevalue integer geotiff_tifftag_maxsamplevalue integer geotiff_tifftag_resolutionunit decimal(1,0)"
+#!   EXPOSABLE_ATTRS="geotiff_tifftag_artist char(255) fme_sweep_angle float fme_text_string char(50) geotiff_number_of_bits_per_cell decimal(1,0) fme_geometry char(50) multi_reader_full_id integer fme_basename char(50) geotiff_tifftag_xresolution float fme_type char(50) fme_feature_type char(50) geotiff_subdataset_name char(255) geotiff_tifftag_minsamplevalue integer geotiff_tifftag_copyright char(255) geotiff_pyramid_num_levels integer geotiff_tifftag_software char(255) geotiff_tifftag_yresolution float geotiff_tifftag_resolutionunit decimal(1,0) geotiff_compression_method char(9) geotiff_private_keys{}.id integer geotiff_photometric_interpretation char(10) geotiff_tifftag_hostcomputer char(255) fme_fill_color char(50) geotiff_private_keys{}.value char(255) geotiff_byte_order char(7) multi_reader_type char(50) geotiff_tifftag_imagedescription char(255) geotiff_tifftag_documentname char(255) fme_text_size float geotiff_tifftag_maxsamplevalue integer fme_rotation float geotiff_interleaving_type char(3) fme_primary_axis float geotiff_pyramid_level{}.num_rows integer fme_secondary_axis float geotiff_subdataset_description char(255) geotiff_area_or_point char(255) multi_reader_keyword char(50) geotiff_tifftag_datetime datetime multi_reader_id integer geotiff_type char(255) geotiff_private_keys{}.type char(6) fme_start_angle float fme_color char(50) geotiff_pyramid_level{}.num_columns integer fme_dataset char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -136,7 +136,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="geotiff_world_file_generation $(_GEOTIFF_WRITER_WORLD_FILE_GENERATION) geotiff_create_tiled_files $(_GEOTIFF_WRITER_CREATE_TILED_FILES) geotiff_tile_size_x $(_GEOTIFF_WRITER_TILE_SIZE_X) geotiff_tile_size_y $(_GEOTIFF_WRITER_TILE_SIZE_Y) geotiff_compression_method $(_GEOTIFF_WRITER_COMPRESSION_METHOD) geotiff_jpeg_compression_level $(_GEOTIFF_WRITER_JPEG_COMPRESSION_LEVEL) geotiff_deflate_compression_level $(_GEOTIFF_WRITER_DEFLATE_COMPRESSION_LEVEL) geotiff_zstd_compression_level $(_GEOTIFF_WRITER_ZSTD_COMPRESSION_LEVEL) geotiff_tab_file_generation $(_GEOTIFF_WRITER_TAB_FILE_GENERATION) geotiff_number_of_bits_per_cell $(_GEOTIFF_WRITER_NUMBER_OF_BITS_PER_CELL) geotiff_enable_bigtiff $(_GEOTIFF_WRITER_ENABLE_BIGTIFF) geotiff_interleaving_type $(_GEOTIFF_WRITER_INTERLEAVING_TYPE) geotiff_photometric_interpretation $(_GEOTIFF_WRITER_PHOTOMETRIC_INTERPRETATION) geotiff_byte_order $(_GEOTIFF_WRITER_BYTE_ORDER) geotiff_calculate_minmax_tifftags $(_GEOTIFF_WRITER_CALCULATE_MINMAX_TIFFTAGS) geotiff_pyramid_num_levels $(_GEOTIFF_WRITER_PYRAMID_NUM_LEVELS) geotiff_pyramid_interpolation_type $(_GEOTIFF_WRITER_PYRAMID_INTERPOLATION_TYPE) geotiff_pyramid_tile_size $(_GEOTIFF_WRITER_PYRAMID_TILE_SIZE)"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_color char(50) fme_basename char(50) geotiff_tifftag_hostcomputer char(255) geotiff_private_keys{}.type char(6) geotiff_private_keys{}.id integer geotiff_tifftag_yresolution float fme_rotation float geotiff_tifftag_copyright char(255) geotiff_tifftag_xresolution float geotiff_compression_method char(9) geotiff_tifftag_documentname char(255) geotiff_tifftag_imagedescription char(255) fme_primary_axis float geotiff_tifftag_artist char(255) fme_sweep_angle float fme_feature_type char(50) geotiff_tifftag_software char(255) geotiff_private_keys{}.value char(255) fme_start_angle float geotiff_calculate_minmax_tifftags char(3) geotiff_enable_bigtiff char(3) geotiff_interleaving_type char(3) geotiff_tab_file_generation char(3) fme_geometry char(50) geotiff_zstd_compression_level integer fme_secondary_axis float fme_fill_color char(50) geotiff_create_tiled_files char(3) geotiff_tile_size_x integer fme_text_string char(50) fme_dataset char(50) fme_text_size float geotiff_tifftag_datetime datetime geotiff_tile_size_y integer geotiff_photometric_interpretation char(10) geotiff_world_file_generation char(3) geotiff_number_of_bits_per_cell decimal(1,0) fme_type char(50) geotiff_jpeg_compression_level decimal(5,0) geotiff_area_or_point char(255) geotiff_type char(255) geotiff_byte_order char(7) geotiff_tifftag_minsamplevalue integer geotiff_tifftag_maxsamplevalue integer geotiff_tifftag_resolutionunit decimal(1,0) geotiff_deflate_compression_level integer"
+#!   EXPOSABLE_ATTRS="geotiff_tifftag_artist char(255) geotiff_world_file_generation char(3) fme_sweep_angle float fme_text_string char(50) geotiff_number_of_bits_per_cell decimal(1,0) fme_geometry char(50) fme_basename char(50) geotiff_tifftag_xresolution float fme_type char(50) fme_feature_type char(50) geotiff_tifftag_minsamplevalue integer geotiff_tifftag_copyright char(255) geotiff_tifftag_software char(255) geotiff_tifftag_yresolution float geotiff_tifftag_resolutionunit decimal(1,0) geotiff_compression_method char(9) geotiff_private_keys{}.id integer geotiff_enable_bigtiff char(3) geotiff_photometric_interpretation char(10) geotiff_tifftag_hostcomputer char(255) geotiff_deflate_compression_level integer geotiff_create_tiled_files char(3) fme_fill_color char(50) geotiff_private_keys{}.value char(255) geotiff_byte_order char(7) geotiff_zstd_compression_level integer geotiff_tifftag_imagedescription char(255) geotiff_tifftag_documentname char(255) fme_text_size float geotiff_tifftag_maxsamplevalue integer fme_rotation float geotiff_interleaving_type char(3) geotiff_calculate_minmax_tifftags char(3) fme_primary_axis float geotiff_tile_size_y integer fme_secondary_axis float geotiff_tab_file_generation char(3) geotiff_jpeg_compression_level decimal(5,0) geotiff_area_or_point char(255) geotiff_tifftag_datetime datetime geotiff_type char(255) geotiff_private_keys{}.type char(6) fme_start_angle float fme_color char(50) fme_dataset char(50) geotiff_tile_size_x integer"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP geotiff_layer_group geotiff_metadata_group%geotiff_compression_group%geotiff_tile_group%geotiff_generate_pyramids%geotiff_advanced_group Raster&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP geotiff_metadata_group geotiff_world_file_generation%geotiff_tab_file_generation Metadata&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP geotiff_tile_group geotiff_create_tiled_files%geotiff_tile_size_x%geotiff_tile_size_y Tile&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP geotiff_compression_group geotiff_compression_method%geotiff_jpeg_compression_level%geotiff_deflate_compression_level%geotiff_zstd_compression_level Compression&quot; &quot;&quot; &quot;GUI ACTIVEDISCLOSUREGROUP geotiff_generate_pyramids geotiff_pyramid_num_levels%geotiff_pyramid_interpolation_type%geotiff_pyramid_tile_size Generate Pyramids&quot; no &quot;GUI OPTIONAL DISCLOSUREGROUP geotiff_advanced_group geotiff_byte_order%geotiff_calculate_minmax_tifftags%geotiff_enable_bigtiff%geotiff_interleaving_type%geotiff_number_of_bits_per_cell%geotiff_photometric_interpretation Advanced&quot; &quot;&quot; &quot;GUI CHOICE geotiff_world_file_generation yes%no Generate World File&quot; no &quot;GUI CHOICE geotiff_create_tiled_files yes%no Create Tiled Files&quot; no &quot;GUI OPTIONAL INTEGER geotiff_tile_size_x Number of Columns per Tile&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER geotiff_tile_size_y Number of Rows per Tile&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP geotiff_compression_method JPEG,jpeg,geotiff_deflate_compression_level,geotiff_zstd_compression_level%DEFLATE,deflate,geotiff_jpeg_compression_level,geotiff_zstd_compression_level%LZW,lzw,geotiff_jpeg_compression_level,geotiff_deflate_compression_level,geotiff_zstd_compression_level%ZSTD,zstd,geotiff_jpeg_compression_level,geotiff_deflate_compression_level%Pack&lt;space&gt;Bits,pack-bits,geotiff_jpeg_compression_level,geotiff_deflate_compression_level,geotiff_zstd_compression_level%CCITT&lt;space&gt;RLE,ccitt-rle,geotiff_jpeg_compression_level,geotiff_deflate_compression_level,geotiff_zstd_compression_level%CCITT&lt;space&gt;FAX3,ccitt-fax3,geotiff_jpeg_compression_level,geotiff_deflate_compression_level,geotiff_zstd_compression_level%CCITT&lt;space&gt;FAX4,ccitt-fax4,geotiff_jpeg_compression_level,geotiff_deflate_compression_level,geotiff_zstd_compression_level%None,none,geotiff_jpeg_compression_level,geotiff_deflate_compression_level,geotiff_zstd_compression_level Compression Method&quot; none &quot;GUI RANGE_SLIDER geotiff_jpeg_compression_level 0%100%0%OFF JPEG Compression Level (0 - 100)&quot; 25 &quot;GUI RANGE_SLIDER geotiff_deflate_compression_level 1%9%0%OFF DEFLATE Compression Level (1 - 9)&quot; 6 &quot;GUI RANGE_SLIDER geotiff_zstd_compression_level 1%22%0%OFF ZSTD Compression Level (1 - 22)&quot; 9 &quot;GUI CHOICE geotiff_tab_file_generation yes%no Generate TAB File&quot; no &quot;GUI OPTIONAL INTEGER geotiff_number_of_bits_per_cell Number of Bits per Cell (1 - 32)&quot; &quot;&quot; &quot;GUI CHOICE geotiff_enable_bigtiff yes%no Enable BigTIFF&quot; no &quot;GUI CHOICE geotiff_interleaving_type BSQ%BIP Interleaving Type&quot; BSQ &quot;GUI CHOICE geotiff_photometric_interpretation Auto%MinIsBlack%MinIsWhite%YCbCr Photometric Interpretation&quot; Auto &quot;GUI LOOKUP_CHOICE geotiff_byte_order Machine,machine%LSB%MSB Byte Order&quot; machine &quot;GUI CHOICE geotiff_calculate_minmax_tifftags yes%no Calculate Min/Max TIFF Tags&quot; no &quot;GUI WHOLE_LINE INTEGER geotiff_pyramid_num_levels Number of Levels to Generate&quot; &quot;&quot; &quot;GUI WHOLE_LINE LOOKUP_CHOICE geotiff_pyramid_interpolation_type Nearest&lt;space&gt;Neighbor,NearestNeighbor%Bilinear,Bilinear%Bicubic,Bicubic Interpolation Type&quot; NearestNeighbor &quot;GUI WHOLE_LINE CHOICE geotiff_pyramid_tile_size 64%128%256%512%1024%2048%4096 Number of Rows/Columns per Tile&quot; 128 "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -200,7 +200,7 @@
 #!   WRITE_DEFS="false"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_color char(50) fme_rotation number(31,15) fme_basename char(50) fme_sweep_angle number(31,15) fme_secondary_axis number(31,15) fme_geometry char(50) fme_start_angle number(31,15) fme_fill_color char(50) fme_text_size number(31,15) fme_feature_type char(50) text_line_eol char(10) fme_text_string char(50) fme_primary_axis number(31,15) fme_dataset char(50) fme_type char(50)"
+#!   EXPOSABLE_ATTRS="fme_secondary_axis number(31,15) fme_primary_axis number(31,15) fme_color char(50) fme_basename char(50) fme_feature_type char(50) fme_dataset char(50) fme_text_size number(31,15) fme_geometry char(50) fme_fill_color char(50) fme_text_string char(50) text_line_eol char(10) fme_sweep_angle number(31,15) fme_start_angle number(31,15) fme_rotation number(31,15) fme_type char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -1041,36 +1041,36 @@
 #! </READER_DATASETS>
 #! <WRITER_DATASETS>
 #! <DATASET
-#!   NAME="TEXTLINE_1"
-#!   OVERRIDE="-TEXTLINE_1_DATASET"
-#!   DATASET="TEXTLINE_1/pop_dens_result.txt"
-#! />
-#! <DATASET
 #!   NAME="GEOTIFF_2"
 #!   OVERRIDE="-GEOTIFF_2_DATASET"
-#!   DATASET="GEOTIFF_2/result"
+#!   DATASET="GEOTIFF_2/03_Population_Density"
+#! />
+#! <DATASET
+#!   NAME="TEXTLINE_1"
+#!   OVERRIDE="-TEXTLINE_1_DATASET"
+#!   DATASET="TEXTLINE_1/pop_dens_BB.txt"
 #! />
 #! </WRITER_DATASETS>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI MULTIFILE SourceDataset_GEOTIFF GeoTIFF_Files(*.tif;*.tiff;*.itiff;*.ovr)|*.tif;*.tiff;*.itiff;*.ovr|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source GeoTIFF File(s):"
-#!   DEFAULT_VALUE="$(FME_MF_DIR)PopDens\ppp_2020_1km_Aggregated.tif"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)EXEL_FILES\ppp_2020_1km_Aggregated.tif"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI DIRNAME DestDataset_GEOTIFF Destination GeoTIFF Folder:"
-#!   DEFAULT_VALUE="$(FME_MF_DIR)PopDens\result"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)output_$(ISO_code)\03_Population_Density"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI FILENAME DestDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:"
-#!   DEFAULT_VALUE="$(FME_MF_DIR)PopDens\result\pop_dens_result.txt"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)output_$(ISO_code)\03_Population_density\pop_dens_BB.txt"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_OR_ATTR ISO_code Choose ISO_code for country:"
-#!   DEFAULT_VALUE="test2"
+#!   GUI_LINE="GUI TEXT ISO_code Choose ISO_code for country:"
+#!   DEFAULT_VALUE="CHE"
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
@@ -1349,13 +1349,13 @@
 
 FME_PYTHON_VERSION 37
 GUI IGNORE SourceDataset_GEOTIFF_1,GEOTIFF_IN_APPLY_GCPS_GEOTIFF_1,GEOTIFF_IN_GCP_INTERPOLATION_METHOD_GEOTIFF_1,GEOTIFF_IN_USE_SEARCH_ENVELOPE_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MINX_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MINY_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MAXX_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MAXY_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEOTIFF_1,GEOTIFF_IN_CLIP_TO_ENVELOPE_GEOTIFF_1,GEOTIFF_IN_GEOTIFF_RDR_ADV_PARM_GROUP_GEOTIFF_1,GEOTIFF_IN_PYRAMID_LEVEL_GEOTIFF_1,GEOTIFF_IN_PREFER_FILE_CS_UNITS_GEOTIFF_1,GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS_GEOTIFF_1,GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY_GEOTIFF_1,GEOTIFF_IN_NETWORK_AUTHENTICATION_GEOTIFF_1,DestDataset_GEOTIFF_2,GEOTIFF_OUT_GEOTIFF_WRT_ADV_PARM_GROUP_GEOTIFF_2,GEOTIFF_OUT_WRITE_OFFSETS_IN_CS_UNITS_GEOTIFF_2,GEOTIFF_OUT_WRITE_PROJECTED_COORDSYS_AS_EPSG_CODE_GEOTIFF_2,GEOTIFF_OUT_WRITE_GEOGRAPHIC_COORDSYS_AS_EPSG_CODE_GEOTIFF_2,GEOTIFF_OUT_WRITE_GEOGRAPHIC_KEYS_FOR_PROJECTED_COORDSYS_GEOTIFF_2,GEOTIFF_OUT_WRITE_ESRI_COMPATIBLE_COORDSYS_GEOTIFF_2,GEOTIFF_OUT_IGNORE_RASTER_TYPE_KEY_GEOTIFF_2,DestDataset_TEXTLINE_1,TEXTLINE_OUT_FME_GROUP_NAMED1_TEXTLINE_1,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1,TEXTLINE_OUT_FME_GROUP_NAMED2_TEXTLINE_1,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1,TEXTLINE_OUT_ENCODING_TEXTLINE_1,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1,TEXTLINE_OUT_FME_GROUP_NAMED3_TEXTLINE_1,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1
-DEFAULT_MACRO SourceDataset_GEOTIFF $(FME_MF_DIR)PopDens\ppp_2020_1km_Aggregated.tif
+DEFAULT_MACRO SourceDataset_GEOTIFF $(FME_MF_DIR)EXEL_FILES\ppp_2020_1km_Aggregated.tif
 GUI MULTIFILE SourceDataset_GEOTIFF GeoTIFF_Files(*.tif;*.tiff;*.itiff;*.ovr)|*.tif;*.tiff;*.itiff;*.ovr|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source GeoTIFF File(s):
-DEFAULT_MACRO DestDataset_GEOTIFF $(FME_MF_DIR)PopDens\result
+DEFAULT_MACRO DestDataset_GEOTIFF $(FME_MF_DIR)output_$(ISO_code)\03_Population_Density
 GUI DIRNAME DestDataset_GEOTIFF Destination GeoTIFF Folder:
-DEFAULT_MACRO DestDataset_TEXTLINE $(FME_MF_DIR)PopDens\result\pop_dens_result.txt
+DEFAULT_MACRO DestDataset_TEXTLINE $(FME_MF_DIR)output_$(ISO_code)\03_Population_density\pop_dens_BB.txt
 GUI FILENAME DestDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:
-DEFAULT_MACRO ISO_code test2
+DEFAULT_MACRO ISO_code CHE
 GUI TEXT ISO_code Choose ISO_code for country:
 DEFAULT_MACRO GEOM -0.46 51.38 0.11 51.67
 GUI TEXT GEOM Select bounding box:
@@ -1664,7 +1664,7 @@ TEXTLINE_1_DATASET "$(DestDataset_TEXTLINE_1)"
 #! END_WB_HEADER
 #! END_HEADER
 
-LOG_FILENAME "$(FME_MF_DIR)popDens_tif2tif.log"
+LOG_FILENAME "$(FME_MF_DIR)popDens_tif2tifv2.log"
 LOG_APPEND NO
 LOG_FILTER_MASK -1
 LOG_MAX_FEATURES 200
@@ -1686,7 +1686,7 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
 
-MACRO WORKSPACE_NAME popDens_tif2tif
+MACRO WORKSPACE_NAME popDens_tif2tifv2
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 GEOTIFF_1_DEF GEOTIFF
@@ -1740,7 +1740,7 @@ FACTORY_DEF * TeeFactory FACTORY_NAME RasterStatisticsCalculator_<Rejected> INPU
 FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeManager    INPUT  FEATURE_TYPE RasterStatisticsCalculator_OUTPUT    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "_creation_instance" "_creation_instance" "" "REMOVE" }      ATTR_ACTION { "fme_basename" "fme_basename" "" "REMOVE" }      ATTR_ACTION { "_clipped" "_clipped" "" "REMOVE" }      ATTR_ACTION { "band0.mean" "text_line_data" "" "RENAME_SET_VALUE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_OUTPUT
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_OUTPUT TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY    ROUTE FME_GENERIC Clipper_INSIDE_0_PMBiwD96aMs= TO GEOTIFF __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>GEOTIFF<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>raster_pop_dens_$(ISO_code$encode$encode)_1km<comma>GEOTIFF<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Clipper_INSIDE_0_PMBiwD96aMs= TO GEOTIFF __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>GEOTIFF<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>raster_pop_dens_$(ISO_code$encode$encode)_1km<comma>GEOTIFF<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeManager_OUTPUT TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
