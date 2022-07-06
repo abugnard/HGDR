@@ -15,7 +15,6 @@
 #              --x_10 "18"
 #              --x_11 "18"
 #              --x_12 "18"
-#              --y_11 "9"
 #              --x_13 "18"
 #              --x_14 "18"
 #              --x_15 "18"
@@ -39,6 +38,7 @@
 #              --y_8 "10"
 #              --y_9 "11"
 #              --y_10 "9"
+#              --y_11 "9"
 #              --y_12 "9"
 #              --y_13 "9"
 #              --y_14 "9"
@@ -53,6 +53,18 @@
 #              --y_23 "9"
 #              --y_24 "9"
 #              --y_25 "9"
+#              --x_deg_1 "22.5"
+#              --x_deg_2 "22.5"
+#              --x_deg_3 "22.5"
+#              --x_deg_4 "33.75"
+#              --x_deg_5 "33.75"
+#              --x_deg_6 "33.75"
+#              --x_deg_7 "45.0"
+#              --x_deg_8 "45.0"
+#              --x_deg_9 "45.0"
+#              --x_deg_10 "22.5"
+#              --x_deg_11 "22.5"
+#              --x_deg_12 "22.5"
 #              --x_deg_13 "22.5"
 #              --x_deg_14 "22.5"
 #              --x_deg_15 "22.5"
@@ -66,6 +78,18 @@
 #              --x_deg_23 "22.5"
 #              --x_deg_24 "22.5"
 #              --x_deg_25 "22.5"
+#              --y_deg_1 "61.60639637138628"
+#              --y_deg_2 "55.77657301866769"
+#              --y_deg_3 "48.92249926375824"
+#              --y_deg_4 "61.60639637138628"
+#              --y_deg_5 "55.77657301866769"
+#              --y_deg_6 "48.92249926375824"
+#              --y_deg_7 "61.60639637138628"
+#              --y_deg_8 "55.77657301866769"
+#              --y_deg_9 "48.92249926375824"
+#              --y_deg_10 "61.60639637138628"
+#              --y_deg_11 "61.60639637138628"
+#              --y_deg_12 "61.60639637138628"
 #              --y_deg_13 "61.60639637138628"
 #              --y_deg_14 "61.60639637138628"
 #              --y_deg_15 "61.60639637138628"
@@ -79,30 +103,6 @@
 #              --y_deg_23 "61.60639637138628"
 #              --y_deg_24 "61.60639637138628"
 #              --y_deg_25 "61.60639637138628"
-#              --x_deg_1 "22.5"
-#              --x_deg_2 "22.5"
-#              --x_deg_3 "22.5"
-#              --x_deg_4 "33.75"
-#              --x_deg_5 "33.75"
-#              --x_deg_6 "33.75"
-#              --x_deg_7 "45.0"
-#              --x_deg_8 "45.0"
-#              --x_deg_9 "45.0"
-#              --x_deg_10 "22.5"
-#              --x_deg_11 "22.5"
-#              --x_deg_12 "22.5"
-#              --y_deg_1 "61.60639637138628"
-#              --y_deg_2 "55.77657301866769"
-#              --y_deg_3 "48.92249926375824"
-#              --y_deg_4 "61.60639637138628"
-#              --y_deg_5 "55.77657301866769"
-#              --y_deg_6 "48.92249926375824"
-#              --y_deg_7 "61.60639637138628"
-#              --y_deg_8 "55.77657301866769"
-#              --y_deg_9 "48.92249926375824"
-#              --y_deg_10 "61.60639637138628"
-#              --y_deg_11 "61.60639637138628"
-#              --y_deg_12 "61.60639637138628"
 #              --y_deg_b_1 "55.77657301866769"
 #              --y_deg_b_2 "48.92249926375824"
 #              --y_deg_b_3 "40.97989806962013"
@@ -155,8 +155,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="20806"
-#!   FME_DOCUMENT_GUID="3a487121-138f-407d-939d-f2c3d310a3cb"
-#!   FME_DOCUMENT_PRIORGUID="d0775927-d4c6-43c8-b588-280ec11d0d37,64bfe0ed-9c42-4f7b-9457-aaa6eb19c676,211ad5b0-96ce-48da-8566-c1fa5debae8c,ee068f8e-172a-4d16-8653-9a02dfb38182,be4b4966-4e34-48ac-b32a-368207b05dbb,dd90768a-eba8-4571-9dcb-346429015e1e,aa5293ba-60c0-40b6-a1a3-77b4659a33c5,7485ff9b-bfa9-4ec0-8470-63a536210b63,f6fcc723-c322-4cf2-9736-a4cac0a9c75d,e4c0e132-30d7-48bd-a2ab-f51eb002e71a,ace38d46-81fc-4719-aa7c-7b17bfa2cc24,a9672aa7-dfb9-4daf-84c0-54763ac97f4b,a49b7658-cf83-4714-8c5c-1be2d7e33e96,c13e3ffa-16b3-482f-bf12-e2b73e65c1df,4b99e4dd-1072-4a92-ae44-9ee64e502e0a,9f9a2d0d-92e1-43ad-b936-51bc0596686d,3d32418e-40da-439a-a9a9-6a43d15c607a,77ee4313-9caa-46f2-980e-860dfd4a1ac4,0de3b0d2-23c3-499c-8ceb-b4e3630a247c,4a1831d7-1c73-477a-94d3-1f020189c67e,530e35c7-5284-4ae5-a5a5-bfb058b29385,ec3e4efc-ec44-4fdf-a7f4-a055057bcef3,aca5c203-0d2f-4e24-9018-3131e123c7fd,6e38fc90-6ec3-488d-a349-ee3519398c4d,ad719ae2-55d0-490c-92f4-7caa432fa86e,a8bf8800-0728-4077-92fb-81bd91d2ac0c,628b1484-853d-4a50-aba2-291bc00419cb,03235e63-12ed-4652-90e7-87dfb8fda709"
+#!   FME_DOCUMENT_GUID="8e052738-afac-4a57-bce9-d430d21601d0"
+#!   FME_DOCUMENT_PRIORGUID="d0775927-d4c6-43c8-b588-280ec11d0d37,64bfe0ed-9c42-4f7b-9457-aaa6eb19c676,211ad5b0-96ce-48da-8566-c1fa5debae8c,ee068f8e-172a-4d16-8653-9a02dfb38182,be4b4966-4e34-48ac-b32a-368207b05dbb,dd90768a-eba8-4571-9dcb-346429015e1e,aa5293ba-60c0-40b6-a1a3-77b4659a33c5,7485ff9b-bfa9-4ec0-8470-63a536210b63,f6fcc723-c322-4cf2-9736-a4cac0a9c75d,e4c0e132-30d7-48bd-a2ab-f51eb002e71a,ace38d46-81fc-4719-aa7c-7b17bfa2cc24,a9672aa7-dfb9-4daf-84c0-54763ac97f4b,a49b7658-cf83-4714-8c5c-1be2d7e33e96,c13e3ffa-16b3-482f-bf12-e2b73e65c1df,4b99e4dd-1072-4a92-ae44-9ee64e502e0a,9f9a2d0d-92e1-43ad-b936-51bc0596686d,3d32418e-40da-439a-a9a9-6a43d15c607a,77ee4313-9caa-46f2-980e-860dfd4a1ac4,0de3b0d2-23c3-499c-8ceb-b4e3630a247c,4a1831d7-1c73-477a-94d3-1f020189c67e,530e35c7-5284-4ae5-a5a5-bfb058b29385,ec3e4efc-ec44-4fdf-a7f4-a055057bcef3,aca5c203-0d2f-4e24-9018-3131e123c7fd,6e38fc90-6ec3-488d-a349-ee3519398c4d,ad719ae2-55d0-490c-92f4-7caa432fa86e,a8bf8800-0728-4077-92fb-81bd91d2ac0c,628b1484-853d-4a50-aba2-291bc00419cb,03235e63-12ed-4652-90e7-87dfb8fda709,3a487121-138f-407d-939d-f2c3d310a3cb"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -165,7 +165,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2020.2.1.0 (20201130 - Build 20806 - WIN64)"
-#!   LAST_SAVE_DATE="2022-06-22T14:10:32"
+#!   LAST_SAVE_DATE="2022-07-05T13:38:01"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -184,7 +184,7 @@
 #!   TITLE="Geospatial PDF - Cartographic Output"
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="8003.99 2023.46"
+#!   VIEW_POSITION="-593.756 1718.77"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="80"
@@ -203,7 +203,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="jpeg_world_file_generation $(_JPEG_WRITER_WORLD_FILE_GENERATION) jpeg_compression_level $(_JPEG_WRITER_COMPRESSION_LEVEL) jpeg_tab_file_generation $(_JPEG_WRITER_TAB_FILE_GENERATION) jpeg_optimize $(_JPEG_WRITER_OPTIMIZE) jpeg_write_exif_tags $(_JPEG_WRITER_WRITE_EXIF_TAGS)"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="jpeg_write_exif_tags char(3) jpeg_exif_spectralsensitivity char(255) jpeg_exif_gpstrackref char(1) jpeg_exif_datetimeoriginal char(20) jpeg_exif_meteringmode decimal(5,0) jpeg_exif_xresolution char(255) jpeg_exif_ycbcrpositioning decimal(5,0) jpeg_exif_primarychromaticities char(255) jpeg_exif_devicesettingdescription char(255) jpeg_exif_gpsdestdistance char(255) jpeg_exif_brightnessvalue float jpeg_exif_gpsdestbearing char(255) jpeg_exif_orientation decimal(5,0) jpeg_exif_gpsmapdatum char(255) jpeg_exif_subjectlocation char(255) jpeg_exif_exposuremode decimal(5,0) jpeg_exif_usercomment char(255) jpeg_exif_whitepoint char(255) jpeg_exif_gpsdestdistanceref char(1) fme_sweep_angle float jpeg_exif_gpsdop char(255) jpeg_exif_compressedbitsperpixel char(255) jpeg_exif_offsettimedigitized char(7) jpeg_exif_relatedsoundfile char(13) jpeg_exif_gpsversionid char(255) jpeg_exif_sharpness decimal(5,0) jpeg_exif_subsectime char(255) jpeg_exif_copyright char(255) jpeg_exif_related_image_file_format char(255) jpeg_exif_offsettime char(7) jpeg_exif_exifversion char(4) jpeg_exif_gpslatituderef char(1) jpeg_exif_standardoutputsensitivity largeint jpeg_exif_isospeedratings decimal(5,0) jpeg_exif_isospeedlatitudeyyy largeint jpeg_exif_focalplaneyresolution char(255) jpeg_tab_file_generation char(3) jpeg_exif_interoperability_index char(255) jpeg_exif_inter_color_profile char(255) fme_secondary_axis float jpeg_exif_cfa_pattern char(255) fme_rotation float jpeg_exif_gpsstatus char(1) jpeg_exif_isospeed largeint fme_dataset char(50) jpeg_exif_exposureprogram decimal(5,0) fme_basename char(50) jpeg_exif_imageuniqueid char(33) jpeg_exif_cfapattern char(255) jpeg_exif_gpsmeasuremode char(1) jpeg_exif_gpssatellites char(255) fme_start_angle float jpeg_exif_flash decimal(5,0) jpeg_exif_gpsdatestamp char(10) jpeg_exif_subjectdistancerange decimal(5,0) jpeg_exif_xpkeywords char(255) jpeg_exif_sensingmethod decimal(5,0) jpeg_exif_ycbcrcoefficients char(255) jpeg_exif_isospeedlatitudezzz largeint jpeg_exif_gpsimgdirectionref char(1) jpeg_exif_gpslatitude char(255) jpeg_exif_xpcomment char(255) jpeg_exif_gpslongitude char(255) jpeg_exif_gpsaltituderef char(255) jpeg_world_file_generation char(3) jpeg_exif_gpsdestlatituderef char(1) jpeg_exif_lightsource decimal(5,0) jpeg_optimize char(3) jpeg_exif_shutterspeedvalue char(255) jpeg_exif_model char(255) jpeg_exif_lensmake char(255) jpeg_exif_exposurebiasvalue char(255) jpeg_exif_gpsdestlongituderef char(1) jpeg_exif_cfa_repeat_pattern_dim char(255) jpeg_exif_exposuretime char(255) jpeg_exif_scenetype char(255) jpeg_exif_gpsspeed char(255) jpeg_exif_gpstrack char(255) jpeg_exif_filesource char(255) jpeg_exif_aperturevalue char(255) fme_primary_axis float jpeg_exif_make char(255) jpeg_exif_iptc_naa char(255) jpeg_exif_gpsareainformation char(255) jpeg_exif_imagedescription char(255) jpeg_exif_subsectime_original char(255) jpeg_exif_colorspace decimal(5,0) jpeg_exif_subjectdistance float jpeg_exif_gpsimgdirection char(255) jpeg_exif_xptitle char(255) jpeg_exif_subsectime_digitized char(255) jpeg_exif_whitebalance decimal(5,0) jpeg_exif_focallength char(255) jpeg_exif_resolutionunit decimal(5,0) jpeg_exif_gpshpositioningerror float jpeg_exif_contrast decimal(5,0) jpeg_exif_lensserialnumber char(255) fme_color char(50) jpeg_exif_pixelxdimension decimal(12,0) jpeg_exif_spatialfrequencyresponse char(255) fme_feature_type char(50) jpeg_exif_yresolution char(255) jpeg_exif_customrendered decimal(5,0) jpeg_exif_datetimedigitized char(20) fme_geometry char(50) jpeg_exif_flashpixversion char(255) jpeg_exif_related_image_width char(255) jpeg_exif_transferfunction char(7680) fme_text_string char(50) jpeg_exif_scenecapturetype decimal(5,0) jpeg_compression_level decimal(5,0) jpeg_exif_saturation decimal(5,0) jpeg_exif_exposureindex float jpeg_exif_offsettimeoriginal char(7) jpeg_exif_gpsaltitude char(255) jpeg_exif_recommendedexposureindex largeint jpeg_exif_lensspecification char(255) jpeg_exif_subjectarea char(255) jpeg_exif_xpauthor char(255) jpeg_type char(255) fme_fill_color char(50) jpeg_exif_digitalzoomratio char(255) jpeg_exif_focalplaneresolutionunit decimal(5,0) fme_type char(50) jpeg_exif_interoperability_version char(255) jpeg_exif_software char(255) jpeg_exif_lensmodel char(255) jpeg_exif_datetime char(20) jpeg_exif_xpsubject char(255) jpeg_exif_componentsconfiguration char(255) jpeg_exif_gpstimestamp char(255) jpeg_exif_makernote char(255) jpeg_exif_gpsdestlongitude char(255) fme_text_size float jpeg_exif_gpsdestbearingref char(1) jpeg_exif_gpsdifferential decimal(5,0) jpeg_exif_focalplanexresolution char(255) jpeg_exif_gpsspeedref char(1) jpeg_exif_maxaperturevalue char(255) jpeg_exif_gpsprocessingmethod char(255) jpeg_exif_pixelydimension decimal(12,0) jpeg_exif_focallengthin35mmfilm decimal(5,0) jpeg_exif_artist char(255) jpeg_exif_gpslongituderef char(1) jpeg_exif_gaincontrol decimal(5,0) jpeg_exif_bodyserialnumber char(255) jpeg_exif_sensitivitytype decimal(5,0) jpeg_exif_related_image_length char(255) jpeg_exif_referenceblackwhite char(255) jpeg_exif_fnumber char(255) jpeg_exif_oecf char(255) jpeg_exif_gpsdestlatitude char(255) jpeg_exif_cameraownername char(255)"
+#!   EXPOSABLE_ATTRS="jpeg_exif_cfa_repeat_pattern_dim char(255) fme_text_string char(50) jpeg_exif_referenceblackwhite char(255) jpeg_exif_software char(255) jpeg_tab_file_generation char(3) jpeg_exif_gpsmeasuremode char(1) jpeg_exif_gpsdifferential decimal(5,0) jpeg_exif_gpsareainformation char(255) jpeg_exif_standardoutputsensitivity largeint jpeg_exif_gpsspeedref char(1) jpeg_exif_xpsubject char(255) jpeg_exif_maxaperturevalue char(255) jpeg_exif_make char(255) jpeg_exif_gpsaltituderef char(255) jpeg_exif_saturation decimal(5,0) jpeg_type char(255) jpeg_exif_offsettimedigitized char(7) jpeg_exif_interoperability_version char(255) jpeg_optimize char(3) jpeg_exif_usercomment char(255) jpeg_write_exif_tags char(3) jpeg_exif_recommendedexposureindex largeint jpeg_exif_scenetype char(255) jpeg_exif_isospeedratings decimal(5,0) jpeg_exif_exposuremode decimal(5,0) jpeg_exif_bodyserialnumber char(255) jpeg_exif_exposuretime char(255) jpeg_exif_sensingmethod decimal(5,0) jpeg_exif_gaincontrol decimal(5,0) jpeg_exif_gpstrackref char(1) jpeg_exif_focallengthin35mmfilm decimal(5,0) jpeg_exif_makernote char(255) jpeg_exif_isospeedlatitudeyyy largeint jpeg_exif_contrast decimal(5,0) jpeg_world_file_generation char(3) jpeg_exif_lightsource decimal(5,0) jpeg_exif_isospeedlatitudezzz largeint jpeg_exif_lensmodel char(255) jpeg_exif_scenecapturetype decimal(5,0) jpeg_exif_orientation decimal(5,0) jpeg_compression_level decimal(5,0) jpeg_exif_gpsversionid char(255) jpeg_exif_gpsdestlongituderef char(1) jpeg_exif_spectralsensitivity char(255) jpeg_exif_gpsdestdistanceref char(1) jpeg_exif_gpslatitude char(255) jpeg_exif_inter_color_profile char(255) jpeg_exif_lensmake char(255) jpeg_exif_gpslongitude char(255) jpeg_exif_gpsdestlongitude char(255) jpeg_exif_datetime char(20) jpeg_exif_imageuniqueid char(33) jpeg_exif_datetimeoriginal char(20) jpeg_exif_exposurebiasvalue char(255) fme_feature_type char(50) jpeg_exif_spatialfrequencyresponse char(255) fme_rotation float jpeg_exif_gpsimgdirection char(255) fme_type char(50) jpeg_exif_cameraownername char(255) jpeg_exif_flashpixversion char(255) jpeg_exif_transferfunction char(7680) jpeg_exif_subjectdistance float jpeg_exif_devicesettingdescription char(255) jpeg_exif_subjectdistancerange decimal(5,0) jpeg_exif_sensitivitytype decimal(5,0) jpeg_exif_subjectlocation char(255) jpeg_exif_lensserialnumber char(255) jpeg_exif_copyright char(255) jpeg_exif_gpsdestbearing char(255) jpeg_exif_model char(255) jpeg_exif_focallength char(255) fme_start_angle float jpeg_exif_exifversion char(4) jpeg_exif_brightnessvalue float jpeg_exif_componentsconfiguration char(255) jpeg_exif_subjectarea char(255) jpeg_exif_xpkeywords char(255) jpeg_exif_gpsspeed char(255) jpeg_exif_xpauthor char(255) jpeg_exif_gpshpositioningerror float jpeg_exif_aperturevalue char(255) jpeg_exif_subsectime_digitized char(255) jpeg_exif_gpsimgdirectionref char(1) jpeg_exif_sharpness decimal(5,0) jpeg_exif_gpssatellites char(255) jpeg_exif_customrendered decimal(5,0) jpeg_exif_digitalzoomratio char(255) fme_geometry char(50) jpeg_exif_flash decimal(5,0) jpeg_exif_gpstrack char(255) jpeg_exif_gpsdestdistance char(255) jpeg_exif_gpslongituderef char(1) fme_fill_color char(50) jpeg_exif_gpsdatestamp char(10) jpeg_exif_ycbcrcoefficients char(255) jpeg_exif_related_image_width char(255) jpeg_exif_primarychromaticities char(255) jpeg_exif_ycbcrpositioning decimal(5,0) fme_secondary_axis float jpeg_exif_whitebalance decimal(5,0) jpeg_exif_gpsstatus char(1) jpeg_exif_shutterspeedvalue char(255) fme_sweep_angle float jpeg_exif_gpsmapdatum char(255) jpeg_exif_compressedbitsperpixel char(255) jpeg_exif_gpslatituderef char(1) jpeg_exif_cfapattern char(255) jpeg_exif_related_image_file_format char(255) jpeg_exif_isospeed largeint jpeg_exif_gpsdestlatituderef char(1) jpeg_exif_gpsdestbearingref char(1) jpeg_exif_exposureprogram decimal(5,0) jpeg_exif_subsectime_original char(255) jpeg_exif_focalplanexresolution char(255) jpeg_exif_iptc_naa char(255) jpeg_exif_imagedescription char(255) jpeg_exif_interoperability_index char(255) jpeg_exif_offsettime char(7) fme_dataset char(50) jpeg_exif_focalplaneyresolution char(255) jpeg_exif_relatedsoundfile char(13) jpeg_exif_datetimedigitized char(20) jpeg_exif_cfa_pattern char(255) jpeg_exif_filesource char(255) jpeg_exif_whitepoint char(255) jpeg_exif_focalplaneresolutionunit decimal(5,0) jpeg_exif_gpstimestamp char(255) jpeg_exif_fnumber char(255) jpeg_exif_lensspecification char(255) jpeg_exif_xresolution char(255) jpeg_exif_gpsdop char(255) fme_primary_axis float jpeg_exif_meteringmode decimal(5,0) jpeg_exif_offsettimeoriginal char(7) jpeg_exif_subsectime char(255) jpeg_exif_pixelydimension decimal(12,0) jpeg_exif_artist char(255) jpeg_exif_oecf char(255) jpeg_exif_gpsdestlatitude char(255) jpeg_exif_colorspace decimal(5,0) jpeg_exif_xpcomment char(255) jpeg_exif_pixelxdimension decimal(12,0) jpeg_exif_xptitle char(255) fme_text_size float fme_color char(50) jpeg_exif_exposureindex float jpeg_exif_yresolution char(255) jpeg_exif_related_image_length char(255) jpeg_exif_gpsaltitude char(255) fme_basename char(50) jpeg_exif_resolutionunit decimal(5,0) jpeg_exif_gpsprocessingmethod char(255)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP jpeg_layer_group jpeg_metadata_group%jpeg_compression_group Raster&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP jpeg_metadata_group jpeg_world_file_generation%jpeg_tab_file_generation%jpeg_write_exif_tags Metadata Files&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP jpeg_compression_group jpeg_compression_level%jpeg_optimize Compression&quot; &quot;&quot; &quot;GUI CHOICE jpeg_world_file_generation yes%no Generate World File&quot; yes &quot;GUI INTEGER jpeg_compression_level Compression Level (0 - 100)&quot; 28 &quot;GUI CHOICE jpeg_tab_file_generation yes%no Generate TAB File&quot; no &quot;GUI CHOICE jpeg_optimize yes%no Optimize JPEG (reduce file size)&quot; no &quot;GUI CHOICE jpeg_write_exif_tags yes%no Write EXIF tags&quot; yes "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -263,7 +263,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="jpeg2000_compression_level $(_JPEG2000_WRITER_COMPRESSION_LEVEL) jpeg2000_layers $(_JPEG2000_WRITER_LAYERS) jpeg2000_profile $(_JPEG2000_WRITER_PROFILE) jpeg2000_tab_file_generation $(_JPEG2000_WRITER_TAB_FILE_GENERATION) jpeg2000_tile_size_x $(_JPEG2000_WRITER_TILE_SIZE_X) jpeg2000_tile_size_y $(_JPEG2000_WRITER_TILE_SIZE_Y)"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_type char(50) fme_secondary_axis float fme_text_string char(50) fme_color char(50) fme_dataset char(50) jpeg2000_type char(255) fme_sweep_angle float fme_geometry char(50) fme_basename char(50) jpeg2000_tab_file_generation char(3) fme_text_size float fme_feature_type char(50) jpeg2000_profile char(8) fme_primary_axis float jpeg2000_layers integer fme_fill_color char(50) jpeg2000_compression_level float fme_start_angle float jpeg2000_tile_size_x integer fme_rotation float jpeg2000_tile_size_y integer"
+#!   EXPOSABLE_ATTRS="fme_color char(50) fme_type char(50) fme_text_size float fme_dataset char(50) jpeg2000_compression_level float fme_primary_axis float jpeg2000_layers integer fme_secondary_axis float fme_start_angle float fme_basename char(50) fme_rotation float fme_sweep_angle float jpeg2000_type char(255) jpeg2000_profile char(8) jpeg2000_tile_size_x integer fme_geometry char(50) jpeg2000_tab_file_generation char(3) jpeg2000_tile_size_y integer fme_text_string char(50) fme_feature_type char(50) fme_fill_color char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP jpeg2000_layer_group jpeg2000_tab_file_generation%jpeg2000_compression_group%jpeg2000_tile_group%jpeg2000_advanced_group Raster&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP jpeg2000_compression_group jpeg2000_compression_level% Compression&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP jpeg2000_tile_group jpeg2000_tile_size_x%jpeg2000_tile_size_y Tile&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP jpeg2000_advanced_group jpeg2000_profile%jpeg2000_layers Advanced&quot; &quot;&quot; &quot;GUI FLOAT jpeg2000_compression_level Compress By Percentage (0 - 99)&quot; 75 &quot;GUI LOOKUP_CHOICE jpeg2000_profile Profile&lt;space&gt;0,profile0%Profile&lt;space&gt;1,profile1%Profile&lt;space&gt;2,profile2%NPJE,npje%EPJE,epje Encoding Profile&quot; profile0 &quot;GUI CHOICE jpeg2000_tab_file_generation yes%no TAB File Generation&quot; no &quot;GUI OPTIONAL INTEGER jpeg2000_tile_size_x Number of Columns per Tile&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER jpeg2000_tile_size_y Number of Rows per Tile&quot; &quot;&quot; &quot;GUI INTEGER jpeg2000_layers Number of Layers&quot; 1 "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -327,7 +327,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="pngraster_world_file_generation $(_PNGRASTER_WRITER_WORLD_FILE_GENERATION) pngraster_tab_file_generation $(_PNGRASTER_WRITER_TAB_FILE_GENERATION) pngraster_optimize $(_PNGRASTER_WRITER_OPTIMIZE)"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="pngraster_type char(255) fme_type char(50) fme_secondary_axis float fme_text_string char(50) fme_color char(50) fme_dataset char(50) fme_geometry char(50) fme_sweep_angle float fme_basename char(50) pngraster_world_file_generation char(3) fme_text_size float fme_feature_type char(50) fme_primary_axis float pngraster_tab_file_generation char(3) fme_fill_color char(50) fme_start_angle float fme_rotation float pngraster_optimize char(3)"
+#!   EXPOSABLE_ATTRS="fme_color char(50) fme_type char(50) fme_text_size float fme_dataset char(50) fme_primary_axis float pngraster_type char(255) pngraster_tab_file_generation char(3) pngraster_world_file_generation char(3) fme_secondary_axis float fme_start_angle float fme_basename char(50) fme_rotation float fme_sweep_angle float fme_geometry char(50) fme_text_string char(50) pngraster_optimize char(3) fme_feature_type char(50) fme_fill_color char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP pngraster_layer_group pngraster_world_file_generation%pngraster_tab_file_generation%pngraster_optimize Raster&quot; &quot;&quot; &quot;GUI CHOICE pngraster_world_file_generation yes%no World File Generation&quot; yes &quot;GUI CHOICE pngraster_tab_file_generation yes%no TAB File Generation&quot; no &quot;GUI CHOICE pngraster_optimize No_optimization%Level_1_(recommended)%Level_2%Level_3%Level_4%Level_5%Level_6%Level_7_(slow) PNG Optimization Level (reduces file size)&quot; No_optimization "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -387,7 +387,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="jpeg_world_file_generation $(_JPEG_WRITER_WORLD_FILE_GENERATION) jpeg_compression_level $(_JPEG_WRITER_COMPRESSION_LEVEL) jpeg_tab_file_generation $(_JPEG_WRITER_TAB_FILE_GENERATION) jpeg_optimize $(_JPEG_WRITER_OPTIMIZE) jpeg_write_exif_tags $(_JPEG_WRITER_WRITE_EXIF_TAGS)"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="jpeg_write_exif_tags char(3) jpeg_exif_spectralsensitivity char(255) jpeg_exif_gpstrackref char(1) jpeg_exif_datetimeoriginal char(20) jpeg_exif_meteringmode decimal(5,0) jpeg_exif_xresolution char(255) jpeg_exif_ycbcrpositioning decimal(5,0) jpeg_exif_primarychromaticities char(255) jpeg_exif_devicesettingdescription char(255) jpeg_exif_gpsdestdistance char(255) jpeg_exif_brightnessvalue float jpeg_exif_gpsdestbearing char(255) jpeg_exif_orientation decimal(5,0) jpeg_exif_gpsmapdatum char(255) jpeg_exif_subjectlocation char(255) jpeg_exif_exposuremode decimal(5,0) jpeg_exif_usercomment char(255) jpeg_exif_whitepoint char(255) jpeg_exif_gpsdestdistanceref char(1) fme_sweep_angle float jpeg_exif_gpsdop char(255) jpeg_exif_compressedbitsperpixel char(255) jpeg_exif_offsettimedigitized char(7) jpeg_exif_relatedsoundfile char(13) jpeg_exif_gpsversionid char(255) jpeg_exif_sharpness decimal(5,0) jpeg_exif_subsectime char(255) jpeg_exif_copyright char(255) jpeg_exif_related_image_file_format char(255) jpeg_exif_offsettime char(7) jpeg_exif_exifversion char(4) jpeg_exif_gpslatituderef char(1) jpeg_exif_standardoutputsensitivity largeint jpeg_exif_isospeedratings decimal(5,0) jpeg_exif_isospeedlatitudeyyy largeint jpeg_exif_focalplaneyresolution char(255) jpeg_tab_file_generation char(3) jpeg_exif_interoperability_index char(255) jpeg_exif_inter_color_profile char(255) fme_secondary_axis float jpeg_exif_cfa_pattern char(255) fme_rotation float jpeg_exif_gpsstatus char(1) jpeg_exif_isospeed largeint fme_dataset char(50) jpeg_exif_exposureprogram decimal(5,0) fme_basename char(50) jpeg_exif_imageuniqueid char(33) jpeg_exif_cfapattern char(255) jpeg_exif_gpsmeasuremode char(1) jpeg_exif_gpssatellites char(255) fme_start_angle float jpeg_exif_flash decimal(5,0) jpeg_exif_gpsdatestamp char(10) jpeg_exif_subjectdistancerange decimal(5,0) jpeg_exif_xpkeywords char(255) jpeg_exif_sensingmethod decimal(5,0) jpeg_exif_ycbcrcoefficients char(255) jpeg_exif_isospeedlatitudezzz largeint jpeg_exif_gpsimgdirectionref char(1) jpeg_exif_gpslatitude char(255) jpeg_exif_xpcomment char(255) jpeg_exif_gpslongitude char(255) jpeg_exif_gpsaltituderef char(255) jpeg_world_file_generation char(3) jpeg_exif_gpsdestlatituderef char(1) jpeg_exif_lightsource decimal(5,0) jpeg_optimize char(3) jpeg_exif_shutterspeedvalue char(255) jpeg_exif_model char(255) jpeg_exif_lensmake char(255) jpeg_exif_exposurebiasvalue char(255) jpeg_exif_gpsdestlongituderef char(1) jpeg_exif_cfa_repeat_pattern_dim char(255) jpeg_exif_exposuretime char(255) jpeg_exif_scenetype char(255) jpeg_exif_gpsspeed char(255) jpeg_exif_gpstrack char(255) jpeg_exif_filesource char(255) jpeg_exif_aperturevalue char(255) fme_primary_axis float jpeg_exif_make char(255) jpeg_exif_iptc_naa char(255) jpeg_exif_gpsareainformation char(255) jpeg_exif_imagedescription char(255) jpeg_exif_subsectime_original char(255) jpeg_exif_colorspace decimal(5,0) jpeg_exif_subjectdistance float jpeg_exif_gpsimgdirection char(255) jpeg_exif_xptitle char(255) jpeg_exif_subsectime_digitized char(255) jpeg_exif_whitebalance decimal(5,0) jpeg_exif_focallength char(255) jpeg_exif_resolutionunit decimal(5,0) jpeg_exif_gpshpositioningerror float jpeg_exif_contrast decimal(5,0) jpeg_exif_lensserialnumber char(255) fme_color char(50) jpeg_exif_pixelxdimension decimal(12,0) jpeg_exif_spatialfrequencyresponse char(255) fme_feature_type char(50) jpeg_exif_yresolution char(255) jpeg_exif_customrendered decimal(5,0) jpeg_exif_datetimedigitized char(20) fme_geometry char(50) jpeg_exif_flashpixversion char(255) jpeg_exif_related_image_width char(255) jpeg_exif_transferfunction char(7680) fme_text_string char(50) jpeg_exif_scenecapturetype decimal(5,0) jpeg_compression_level decimal(5,0) jpeg_exif_saturation decimal(5,0) jpeg_exif_exposureindex float jpeg_exif_offsettimeoriginal char(7) jpeg_exif_gpsaltitude char(255) jpeg_exif_recommendedexposureindex largeint jpeg_exif_lensspecification char(255) jpeg_exif_subjectarea char(255) jpeg_exif_xpauthor char(255) jpeg_type char(255) fme_fill_color char(50) jpeg_exif_digitalzoomratio char(255) jpeg_exif_focalplaneresolutionunit decimal(5,0) fme_type char(50) jpeg_exif_interoperability_version char(255) jpeg_exif_software char(255) jpeg_exif_lensmodel char(255) jpeg_exif_datetime char(20) jpeg_exif_xpsubject char(255) jpeg_exif_componentsconfiguration char(255) jpeg_exif_gpstimestamp char(255) jpeg_exif_makernote char(255) jpeg_exif_gpsdestlongitude char(255) fme_text_size float jpeg_exif_gpsdestbearingref char(1) jpeg_exif_gpsdifferential decimal(5,0) jpeg_exif_focalplanexresolution char(255) jpeg_exif_gpsspeedref char(1) jpeg_exif_maxaperturevalue char(255) jpeg_exif_gpsprocessingmethod char(255) jpeg_exif_pixelydimension decimal(12,0) jpeg_exif_focallengthin35mmfilm decimal(5,0) jpeg_exif_artist char(255) jpeg_exif_gpslongituderef char(1) jpeg_exif_gaincontrol decimal(5,0) jpeg_exif_bodyserialnumber char(255) jpeg_exif_sensitivitytype decimal(5,0) jpeg_exif_related_image_length char(255) jpeg_exif_referenceblackwhite char(255) jpeg_exif_fnumber char(255) jpeg_exif_oecf char(255) jpeg_exif_gpsdestlatitude char(255) jpeg_exif_cameraownername char(255)"
+#!   EXPOSABLE_ATTRS="jpeg_exif_cfa_repeat_pattern_dim char(255) fme_text_string char(50) jpeg_exif_referenceblackwhite char(255) jpeg_exif_software char(255) jpeg_tab_file_generation char(3) jpeg_exif_gpsmeasuremode char(1) jpeg_exif_gpsdifferential decimal(5,0) jpeg_exif_gpsareainformation char(255) jpeg_exif_standardoutputsensitivity largeint jpeg_exif_gpsspeedref char(1) jpeg_exif_xpsubject char(255) jpeg_exif_maxaperturevalue char(255) jpeg_exif_make char(255) jpeg_exif_gpsaltituderef char(255) jpeg_exif_saturation decimal(5,0) jpeg_type char(255) jpeg_exif_offsettimedigitized char(7) jpeg_exif_interoperability_version char(255) jpeg_optimize char(3) jpeg_exif_usercomment char(255) jpeg_write_exif_tags char(3) jpeg_exif_recommendedexposureindex largeint jpeg_exif_scenetype char(255) jpeg_exif_isospeedratings decimal(5,0) jpeg_exif_exposuremode decimal(5,0) jpeg_exif_bodyserialnumber char(255) jpeg_exif_exposuretime char(255) jpeg_exif_sensingmethod decimal(5,0) jpeg_exif_gaincontrol decimal(5,0) jpeg_exif_gpstrackref char(1) jpeg_exif_focallengthin35mmfilm decimal(5,0) jpeg_exif_makernote char(255) jpeg_exif_isospeedlatitudeyyy largeint jpeg_exif_contrast decimal(5,0) jpeg_world_file_generation char(3) jpeg_exif_lightsource decimal(5,0) jpeg_exif_isospeedlatitudezzz largeint jpeg_exif_lensmodel char(255) jpeg_exif_scenecapturetype decimal(5,0) jpeg_exif_orientation decimal(5,0) jpeg_compression_level decimal(5,0) jpeg_exif_gpsversionid char(255) jpeg_exif_gpsdestlongituderef char(1) jpeg_exif_spectralsensitivity char(255) jpeg_exif_gpsdestdistanceref char(1) jpeg_exif_gpslatitude char(255) jpeg_exif_inter_color_profile char(255) jpeg_exif_lensmake char(255) jpeg_exif_gpslongitude char(255) jpeg_exif_gpsdestlongitude char(255) jpeg_exif_datetime char(20) jpeg_exif_imageuniqueid char(33) jpeg_exif_datetimeoriginal char(20) jpeg_exif_exposurebiasvalue char(255) fme_feature_type char(50) jpeg_exif_spatialfrequencyresponse char(255) fme_rotation float jpeg_exif_gpsimgdirection char(255) fme_type char(50) jpeg_exif_cameraownername char(255) jpeg_exif_flashpixversion char(255) jpeg_exif_transferfunction char(7680) jpeg_exif_subjectdistance float jpeg_exif_devicesettingdescription char(255) jpeg_exif_subjectdistancerange decimal(5,0) jpeg_exif_sensitivitytype decimal(5,0) jpeg_exif_subjectlocation char(255) jpeg_exif_lensserialnumber char(255) jpeg_exif_copyright char(255) jpeg_exif_gpsdestbearing char(255) jpeg_exif_model char(255) jpeg_exif_focallength char(255) fme_start_angle float jpeg_exif_exifversion char(4) jpeg_exif_brightnessvalue float jpeg_exif_componentsconfiguration char(255) jpeg_exif_subjectarea char(255) jpeg_exif_xpkeywords char(255) jpeg_exif_gpsspeed char(255) jpeg_exif_xpauthor char(255) jpeg_exif_gpshpositioningerror float jpeg_exif_aperturevalue char(255) jpeg_exif_subsectime_digitized char(255) jpeg_exif_gpsimgdirectionref char(1) jpeg_exif_sharpness decimal(5,0) jpeg_exif_gpssatellites char(255) jpeg_exif_customrendered decimal(5,0) jpeg_exif_digitalzoomratio char(255) fme_geometry char(50) jpeg_exif_flash decimal(5,0) jpeg_exif_gpstrack char(255) jpeg_exif_gpsdestdistance char(255) jpeg_exif_gpslongituderef char(1) fme_fill_color char(50) jpeg_exif_gpsdatestamp char(10) jpeg_exif_ycbcrcoefficients char(255) jpeg_exif_related_image_width char(255) jpeg_exif_primarychromaticities char(255) jpeg_exif_ycbcrpositioning decimal(5,0) fme_secondary_axis float jpeg_exif_whitebalance decimal(5,0) jpeg_exif_gpsstatus char(1) jpeg_exif_shutterspeedvalue char(255) fme_sweep_angle float jpeg_exif_gpsmapdatum char(255) jpeg_exif_compressedbitsperpixel char(255) jpeg_exif_gpslatituderef char(1) jpeg_exif_cfapattern char(255) jpeg_exif_related_image_file_format char(255) jpeg_exif_isospeed largeint jpeg_exif_gpsdestlatituderef char(1) jpeg_exif_gpsdestbearingref char(1) jpeg_exif_exposureprogram decimal(5,0) jpeg_exif_subsectime_original char(255) jpeg_exif_focalplanexresolution char(255) jpeg_exif_iptc_naa char(255) jpeg_exif_imagedescription char(255) jpeg_exif_interoperability_index char(255) jpeg_exif_offsettime char(7) fme_dataset char(50) jpeg_exif_focalplaneyresolution char(255) jpeg_exif_relatedsoundfile char(13) jpeg_exif_datetimedigitized char(20) jpeg_exif_cfa_pattern char(255) jpeg_exif_filesource char(255) jpeg_exif_whitepoint char(255) jpeg_exif_focalplaneresolutionunit decimal(5,0) jpeg_exif_gpstimestamp char(255) jpeg_exif_fnumber char(255) jpeg_exif_lensspecification char(255) jpeg_exif_xresolution char(255) jpeg_exif_gpsdop char(255) fme_primary_axis float jpeg_exif_meteringmode decimal(5,0) jpeg_exif_offsettimeoriginal char(7) jpeg_exif_subsectime char(255) jpeg_exif_pixelydimension decimal(12,0) jpeg_exif_artist char(255) jpeg_exif_oecf char(255) jpeg_exif_gpsdestlatitude char(255) jpeg_exif_colorspace decimal(5,0) jpeg_exif_xpcomment char(255) jpeg_exif_pixelxdimension decimal(12,0) jpeg_exif_xptitle char(255) fme_text_size float fme_color char(50) jpeg_exif_exposureindex float jpeg_exif_yresolution char(255) jpeg_exif_related_image_length char(255) jpeg_exif_gpsaltitude char(255) fme_basename char(50) jpeg_exif_resolutionunit decimal(5,0) jpeg_exif_gpsprocessingmethod char(255)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP jpeg_layer_group jpeg_metadata_group%jpeg_compression_group Raster&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP jpeg_metadata_group jpeg_world_file_generation%jpeg_tab_file_generation%jpeg_write_exif_tags Metadata Files&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP jpeg_compression_group jpeg_compression_level%jpeg_optimize Compression&quot; &quot;&quot; &quot;GUI CHOICE jpeg_world_file_generation yes%no Generate World File&quot; yes &quot;GUI INTEGER jpeg_compression_level Compression Level (0 - 100)&quot; 28 &quot;GUI CHOICE jpeg_tab_file_generation yes%no Generate TAB File&quot; no &quot;GUI CHOICE jpeg_optimize yes%no Optimize JPEG (reduce file size)&quot; no &quot;GUI CHOICE jpeg_write_exif_tags yes%no Write EXIF tags&quot; yes "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -447,7 +447,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="jpeg2000_compression_level $(_JPEG2000_WRITER_COMPRESSION_LEVEL) jpeg2000_layers $(_JPEG2000_WRITER_LAYERS) jpeg2000_profile $(_JPEG2000_WRITER_PROFILE) jpeg2000_tab_file_generation $(_JPEG2000_WRITER_TAB_FILE_GENERATION) jpeg2000_tile_size_x $(_JPEG2000_WRITER_TILE_SIZE_X) jpeg2000_tile_size_y $(_JPEG2000_WRITER_TILE_SIZE_Y)"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_type char(50) fme_secondary_axis float fme_text_string char(50) fme_color char(50) fme_dataset char(50) jpeg2000_type char(255) fme_sweep_angle float fme_geometry char(50) fme_basename char(50) jpeg2000_tab_file_generation char(3) fme_text_size float fme_feature_type char(50) jpeg2000_profile char(8) fme_primary_axis float jpeg2000_layers integer fme_fill_color char(50) jpeg2000_compression_level float fme_start_angle float jpeg2000_tile_size_x integer fme_rotation float jpeg2000_tile_size_y integer"
+#!   EXPOSABLE_ATTRS="fme_color char(50) fme_type char(50) fme_text_size float fme_dataset char(50) jpeg2000_compression_level float fme_primary_axis float jpeg2000_layers integer fme_secondary_axis float fme_start_angle float fme_basename char(50) fme_rotation float fme_sweep_angle float jpeg2000_type char(255) jpeg2000_profile char(8) jpeg2000_tile_size_x integer fme_geometry char(50) jpeg2000_tab_file_generation char(3) jpeg2000_tile_size_y integer fme_text_string char(50) fme_feature_type char(50) fme_fill_color char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP jpeg2000_layer_group jpeg2000_tab_file_generation%jpeg2000_compression_group%jpeg2000_tile_group%jpeg2000_advanced_group Raster&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP jpeg2000_compression_group jpeg2000_compression_level% Compression&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP jpeg2000_tile_group jpeg2000_tile_size_x%jpeg2000_tile_size_y Tile&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP jpeg2000_advanced_group jpeg2000_profile%jpeg2000_layers Advanced&quot; &quot;&quot; &quot;GUI FLOAT jpeg2000_compression_level Compress By Percentage (0 - 99)&quot; 75 &quot;GUI LOOKUP_CHOICE jpeg2000_profile Profile&lt;space&gt;0,profile0%Profile&lt;space&gt;1,profile1%Profile&lt;space&gt;2,profile2%NPJE,npje%EPJE,epje Encoding Profile&quot; profile0 &quot;GUI CHOICE jpeg2000_tab_file_generation yes%no TAB File Generation&quot; no &quot;GUI OPTIONAL INTEGER jpeg2000_tile_size_x Number of Columns per Tile&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER jpeg2000_tile_size_y Number of Rows per Tile&quot; &quot;&quot; &quot;GUI INTEGER jpeg2000_layers Number of Layers&quot; 1 "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -511,7 +511,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="pngraster_world_file_generation $(_PNGRASTER_WRITER_WORLD_FILE_GENERATION) pngraster_tab_file_generation $(_PNGRASTER_WRITER_TAB_FILE_GENERATION) pngraster_optimize $(_PNGRASTER_WRITER_OPTIMIZE)"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="pngraster_type char(255) fme_type char(50) fme_secondary_axis float fme_text_string char(50) fme_color char(50) fme_dataset char(50) fme_geometry char(50) fme_sweep_angle float fme_basename char(50) pngraster_world_file_generation char(3) fme_text_size float fme_feature_type char(50) fme_primary_axis float pngraster_tab_file_generation char(3) fme_fill_color char(50) fme_start_angle float fme_rotation float pngraster_optimize char(3)"
+#!   EXPOSABLE_ATTRS="fme_color char(50) fme_type char(50) fme_text_size float fme_dataset char(50) fme_primary_axis float pngraster_type char(255) pngraster_tab_file_generation char(3) pngraster_world_file_generation char(3) fme_secondary_axis float fme_start_angle float fme_basename char(50) fme_rotation float fme_sweep_angle float fme_geometry char(50) fme_text_string char(50) pngraster_optimize char(3) fme_feature_type char(50) fme_fill_color char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP pngraster_layer_group pngraster_world_file_generation%pngraster_tab_file_generation%pngraster_optimize Raster&quot; &quot;&quot; &quot;GUI CHOICE pngraster_world_file_generation yes%no World File Generation&quot; yes &quot;GUI CHOICE pngraster_tab_file_generation yes%no TAB File Generation&quot; no &quot;GUI CHOICE pngraster_optimize No_optimization%Level_1_(recommended)%Level_2%Level_3%Level_4%Level_5%Level_6%Level_7_(slow) PNG Optimization Level (reduces file size)&quot; No_optimization "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -571,7 +571,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="jpeg_world_file_generation $(_JPEG_WRITER_WORLD_FILE_GENERATION) jpeg_compression_level $(_JPEG_WRITER_COMPRESSION_LEVEL) jpeg_tab_file_generation $(_JPEG_WRITER_TAB_FILE_GENERATION) jpeg_optimize $(_JPEG_WRITER_OPTIMIZE) jpeg_write_exif_tags $(_JPEG_WRITER_WRITE_EXIF_TAGS)"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="jpeg_write_exif_tags char(3) jpeg_exif_spectralsensitivity char(255) jpeg_exif_gpstrackref char(1) jpeg_exif_datetimeoriginal char(20) jpeg_exif_meteringmode decimal(5,0) jpeg_exif_xresolution char(255) jpeg_exif_ycbcrpositioning decimal(5,0) jpeg_exif_primarychromaticities char(255) jpeg_exif_devicesettingdescription char(255) jpeg_exif_gpsdestdistance char(255) jpeg_exif_brightnessvalue float jpeg_exif_gpsdestbearing char(255) jpeg_exif_orientation decimal(5,0) jpeg_exif_gpsmapdatum char(255) jpeg_exif_subjectlocation char(255) jpeg_exif_exposuremode decimal(5,0) jpeg_exif_usercomment char(255) jpeg_exif_whitepoint char(255) jpeg_exif_gpsdestdistanceref char(1) fme_sweep_angle float jpeg_exif_gpsdop char(255) jpeg_exif_compressedbitsperpixel char(255) jpeg_exif_offsettimedigitized char(7) jpeg_exif_relatedsoundfile char(13) jpeg_exif_gpsversionid char(255) jpeg_exif_sharpness decimal(5,0) jpeg_exif_subsectime char(255) jpeg_exif_copyright char(255) jpeg_exif_related_image_file_format char(255) jpeg_exif_offsettime char(7) jpeg_exif_exifversion char(4) jpeg_exif_gpslatituderef char(1) jpeg_exif_standardoutputsensitivity largeint jpeg_exif_isospeedratings decimal(5,0) jpeg_exif_isospeedlatitudeyyy largeint jpeg_exif_focalplaneyresolution char(255) jpeg_tab_file_generation char(3) jpeg_exif_interoperability_index char(255) jpeg_exif_inter_color_profile char(255) fme_secondary_axis float jpeg_exif_cfa_pattern char(255) fme_rotation float jpeg_exif_gpsstatus char(1) jpeg_exif_isospeed largeint fme_dataset char(50) jpeg_exif_exposureprogram decimal(5,0) fme_basename char(50) jpeg_exif_imageuniqueid char(33) jpeg_exif_cfapattern char(255) jpeg_exif_gpsmeasuremode char(1) jpeg_exif_gpssatellites char(255) fme_start_angle float jpeg_exif_flash decimal(5,0) jpeg_exif_gpsdatestamp char(10) jpeg_exif_subjectdistancerange decimal(5,0) jpeg_exif_xpkeywords char(255) jpeg_exif_sensingmethod decimal(5,0) jpeg_exif_ycbcrcoefficients char(255) jpeg_exif_isospeedlatitudezzz largeint jpeg_exif_gpsimgdirectionref char(1) jpeg_exif_gpslatitude char(255) jpeg_exif_xpcomment char(255) jpeg_exif_gpslongitude char(255) jpeg_exif_gpsaltituderef char(255) jpeg_world_file_generation char(3) jpeg_exif_gpsdestlatituderef char(1) jpeg_exif_lightsource decimal(5,0) jpeg_optimize char(3) jpeg_exif_shutterspeedvalue char(255) jpeg_exif_model char(255) jpeg_exif_lensmake char(255) jpeg_exif_exposurebiasvalue char(255) jpeg_exif_gpsdestlongituderef char(1) jpeg_exif_cfa_repeat_pattern_dim char(255) jpeg_exif_exposuretime char(255) jpeg_exif_scenetype char(255) jpeg_exif_gpsspeed char(255) jpeg_exif_gpstrack char(255) jpeg_exif_filesource char(255) jpeg_exif_aperturevalue char(255) fme_primary_axis float jpeg_exif_make char(255) jpeg_exif_iptc_naa char(255) jpeg_exif_gpsareainformation char(255) jpeg_exif_imagedescription char(255) jpeg_exif_subsectime_original char(255) jpeg_exif_colorspace decimal(5,0) jpeg_exif_subjectdistance float jpeg_exif_gpsimgdirection char(255) jpeg_exif_xptitle char(255) jpeg_exif_subsectime_digitized char(255) jpeg_exif_whitebalance decimal(5,0) jpeg_exif_focallength char(255) jpeg_exif_resolutionunit decimal(5,0) jpeg_exif_gpshpositioningerror float jpeg_exif_contrast decimal(5,0) jpeg_exif_lensserialnumber char(255) fme_color char(50) jpeg_exif_pixelxdimension decimal(12,0) jpeg_exif_spatialfrequencyresponse char(255) fme_feature_type char(50) jpeg_exif_yresolution char(255) jpeg_exif_customrendered decimal(5,0) jpeg_exif_datetimedigitized char(20) fme_geometry char(50) jpeg_exif_flashpixversion char(255) jpeg_exif_related_image_width char(255) jpeg_exif_transferfunction char(7680) fme_text_string char(50) jpeg_exif_scenecapturetype decimal(5,0) jpeg_compression_level decimal(5,0) jpeg_exif_saturation decimal(5,0) jpeg_exif_exposureindex float jpeg_exif_offsettimeoriginal char(7) jpeg_exif_gpsaltitude char(255) jpeg_exif_recommendedexposureindex largeint jpeg_exif_lensspecification char(255) jpeg_exif_subjectarea char(255) jpeg_exif_xpauthor char(255) jpeg_type char(255) fme_fill_color char(50) jpeg_exif_digitalzoomratio char(255) jpeg_exif_focalplaneresolutionunit decimal(5,0) fme_type char(50) jpeg_exif_interoperability_version char(255) jpeg_exif_software char(255) jpeg_exif_lensmodel char(255) jpeg_exif_datetime char(20) jpeg_exif_xpsubject char(255) jpeg_exif_componentsconfiguration char(255) jpeg_exif_gpstimestamp char(255) jpeg_exif_makernote char(255) jpeg_exif_gpsdestlongitude char(255) fme_text_size float jpeg_exif_gpsdestbearingref char(1) jpeg_exif_gpsdifferential decimal(5,0) jpeg_exif_focalplanexresolution char(255) jpeg_exif_gpsspeedref char(1) jpeg_exif_maxaperturevalue char(255) jpeg_exif_gpsprocessingmethod char(255) jpeg_exif_pixelydimension decimal(12,0) jpeg_exif_focallengthin35mmfilm decimal(5,0) jpeg_exif_artist char(255) jpeg_exif_gpslongituderef char(1) jpeg_exif_gaincontrol decimal(5,0) jpeg_exif_bodyserialnumber char(255) jpeg_exif_sensitivitytype decimal(5,0) jpeg_exif_related_image_length char(255) jpeg_exif_referenceblackwhite char(255) jpeg_exif_fnumber char(255) jpeg_exif_oecf char(255) jpeg_exif_gpsdestlatitude char(255) jpeg_exif_cameraownername char(255)"
+#!   EXPOSABLE_ATTRS="jpeg_exif_cfa_repeat_pattern_dim char(255) fme_text_string char(50) jpeg_exif_referenceblackwhite char(255) jpeg_exif_software char(255) jpeg_tab_file_generation char(3) jpeg_exif_gpsmeasuremode char(1) jpeg_exif_gpsdifferential decimal(5,0) jpeg_exif_gpsareainformation char(255) jpeg_exif_standardoutputsensitivity largeint jpeg_exif_gpsspeedref char(1) jpeg_exif_xpsubject char(255) jpeg_exif_maxaperturevalue char(255) jpeg_exif_make char(255) jpeg_exif_gpsaltituderef char(255) jpeg_exif_saturation decimal(5,0) jpeg_type char(255) jpeg_exif_offsettimedigitized char(7) jpeg_exif_interoperability_version char(255) jpeg_optimize char(3) jpeg_exif_usercomment char(255) jpeg_write_exif_tags char(3) jpeg_exif_recommendedexposureindex largeint jpeg_exif_scenetype char(255) jpeg_exif_isospeedratings decimal(5,0) jpeg_exif_exposuremode decimal(5,0) jpeg_exif_bodyserialnumber char(255) jpeg_exif_exposuretime char(255) jpeg_exif_sensingmethod decimal(5,0) jpeg_exif_gaincontrol decimal(5,0) jpeg_exif_gpstrackref char(1) jpeg_exif_focallengthin35mmfilm decimal(5,0) jpeg_exif_makernote char(255) jpeg_exif_isospeedlatitudeyyy largeint jpeg_exif_contrast decimal(5,0) jpeg_world_file_generation char(3) jpeg_exif_lightsource decimal(5,0) jpeg_exif_isospeedlatitudezzz largeint jpeg_exif_lensmodel char(255) jpeg_exif_scenecapturetype decimal(5,0) jpeg_exif_orientation decimal(5,0) jpeg_compression_level decimal(5,0) jpeg_exif_gpsversionid char(255) jpeg_exif_gpsdestlongituderef char(1) jpeg_exif_spectralsensitivity char(255) jpeg_exif_gpsdestdistanceref char(1) jpeg_exif_gpslatitude char(255) jpeg_exif_inter_color_profile char(255) jpeg_exif_lensmake char(255) jpeg_exif_gpslongitude char(255) jpeg_exif_gpsdestlongitude char(255) jpeg_exif_datetime char(20) jpeg_exif_imageuniqueid char(33) jpeg_exif_datetimeoriginal char(20) jpeg_exif_exposurebiasvalue char(255) fme_feature_type char(50) jpeg_exif_spatialfrequencyresponse char(255) fme_rotation float jpeg_exif_gpsimgdirection char(255) fme_type char(50) jpeg_exif_cameraownername char(255) jpeg_exif_flashpixversion char(255) jpeg_exif_transferfunction char(7680) jpeg_exif_subjectdistance float jpeg_exif_devicesettingdescription char(255) jpeg_exif_subjectdistancerange decimal(5,0) jpeg_exif_sensitivitytype decimal(5,0) jpeg_exif_subjectlocation char(255) jpeg_exif_lensserialnumber char(255) jpeg_exif_copyright char(255) jpeg_exif_gpsdestbearing char(255) jpeg_exif_model char(255) jpeg_exif_focallength char(255) fme_start_angle float jpeg_exif_exifversion char(4) jpeg_exif_brightnessvalue float jpeg_exif_componentsconfiguration char(255) jpeg_exif_subjectarea char(255) jpeg_exif_xpkeywords char(255) jpeg_exif_gpsspeed char(255) jpeg_exif_xpauthor char(255) jpeg_exif_gpshpositioningerror float jpeg_exif_aperturevalue char(255) jpeg_exif_subsectime_digitized char(255) jpeg_exif_gpsimgdirectionref char(1) jpeg_exif_sharpness decimal(5,0) jpeg_exif_gpssatellites char(255) jpeg_exif_customrendered decimal(5,0) jpeg_exif_digitalzoomratio char(255) fme_geometry char(50) jpeg_exif_flash decimal(5,0) jpeg_exif_gpstrack char(255) jpeg_exif_gpsdestdistance char(255) jpeg_exif_gpslongituderef char(1) fme_fill_color char(50) jpeg_exif_gpsdatestamp char(10) jpeg_exif_ycbcrcoefficients char(255) jpeg_exif_related_image_width char(255) jpeg_exif_primarychromaticities char(255) jpeg_exif_ycbcrpositioning decimal(5,0) fme_secondary_axis float jpeg_exif_whitebalance decimal(5,0) jpeg_exif_gpsstatus char(1) jpeg_exif_shutterspeedvalue char(255) fme_sweep_angle float jpeg_exif_gpsmapdatum char(255) jpeg_exif_compressedbitsperpixel char(255) jpeg_exif_gpslatituderef char(1) jpeg_exif_cfapattern char(255) jpeg_exif_related_image_file_format char(255) jpeg_exif_isospeed largeint jpeg_exif_gpsdestlatituderef char(1) jpeg_exif_gpsdestbearingref char(1) jpeg_exif_exposureprogram decimal(5,0) jpeg_exif_subsectime_original char(255) jpeg_exif_focalplanexresolution char(255) jpeg_exif_iptc_naa char(255) jpeg_exif_imagedescription char(255) jpeg_exif_interoperability_index char(255) jpeg_exif_offsettime char(7) fme_dataset char(50) jpeg_exif_focalplaneyresolution char(255) jpeg_exif_relatedsoundfile char(13) jpeg_exif_datetimedigitized char(20) jpeg_exif_cfa_pattern char(255) jpeg_exif_filesource char(255) jpeg_exif_whitepoint char(255) jpeg_exif_focalplaneresolutionunit decimal(5,0) jpeg_exif_gpstimestamp char(255) jpeg_exif_fnumber char(255) jpeg_exif_lensspecification char(255) jpeg_exif_xresolution char(255) jpeg_exif_gpsdop char(255) fme_primary_axis float jpeg_exif_meteringmode decimal(5,0) jpeg_exif_offsettimeoriginal char(7) jpeg_exif_subsectime char(255) jpeg_exif_pixelydimension decimal(12,0) jpeg_exif_artist char(255) jpeg_exif_oecf char(255) jpeg_exif_gpsdestlatitude char(255) jpeg_exif_colorspace decimal(5,0) jpeg_exif_xpcomment char(255) jpeg_exif_pixelxdimension decimal(12,0) jpeg_exif_xptitle char(255) fme_text_size float fme_color char(50) jpeg_exif_exposureindex float jpeg_exif_yresolution char(255) jpeg_exif_related_image_length char(255) jpeg_exif_gpsaltitude char(255) fme_basename char(50) jpeg_exif_resolutionunit decimal(5,0) jpeg_exif_gpsprocessingmethod char(255)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP jpeg_layer_group jpeg_metadata_group%jpeg_compression_group Raster&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP jpeg_metadata_group jpeg_world_file_generation%jpeg_tab_file_generation%jpeg_write_exif_tags Metadata Files&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP jpeg_compression_group jpeg_compression_level%jpeg_optimize Compression&quot; &quot;&quot; &quot;GUI CHOICE jpeg_world_file_generation yes%no Generate World File&quot; yes &quot;GUI INTEGER jpeg_compression_level Compression Level (0 - 100)&quot; 28 &quot;GUI CHOICE jpeg_tab_file_generation yes%no Generate TAB File&quot; no &quot;GUI CHOICE jpeg_optimize yes%no Optimize JPEG (reduce file size)&quot; no &quot;GUI CHOICE jpeg_write_exif_tags yes%no Write EXIF tags&quot; yes "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -624,277 +624,277 @@
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(width)"
 #!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(width)"
 #!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(width)"
 #!   FME_TYPE="fme_char(width)"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(width)"
 #!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(254)"
 #!   FME_TYPE="fme_buffer"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(254)"
 #!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(254)"
 #!   FME_TYPE="fme_xml"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(254)"
 #!   FME_TYPE="fme_json"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="datetime"
 #!   FME_TYPE="fme_datetime"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="time"
 #!   FME_TYPE="fme_time"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="date"
 #!   FME_TYPE="fme_date"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="decimal(width,decimal)"
 #!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="float"
 #!   FME_TYPE="fme_real64"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="float"
 #!   FME_TYPE="fme_real32"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="integer"
 #!   FME_TYPE="fme_int32"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="largeint"
 #!   FME_TYPE="fme_int64"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="decimal(20,0)"
 #!   FME_TYPE="fme_uint64"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="largeint"
 #!   FME_TYPE="fme_uint32"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="logical"
 #!   FME_TYPE="fme_boolean"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="smallint"
 #!   FME_TYPE="fme_int16"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="integer"
 #!   FME_TYPE="fme_uint16"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="smallint"
 #!   FME_TYPE="fme_int8"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="smallint"
 #!   FME_TYPE="fme_uint8"
-#!   FORMAT="PNGRASTER"
+#!   FORMAT="JPEG"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(width)"
 #!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(width)"
 #!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(width)"
 #!   FME_TYPE="fme_char(width)"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(width)"
 #!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(254)"
 #!   FME_TYPE="fme_buffer"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(254)"
 #!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(254)"
 #!   FME_TYPE="fme_xml"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(254)"
 #!   FME_TYPE="fme_json"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="datetime"
 #!   FME_TYPE="fme_datetime"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="time"
 #!   FME_TYPE="fme_time"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="date"
 #!   FME_TYPE="fme_date"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="decimal(width,decimal)"
 #!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="float"
 #!   FME_TYPE="fme_real64"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="float"
 #!   FME_TYPE="fme_real32"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="integer"
 #!   FME_TYPE="fme_int32"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="largeint"
 #!   FME_TYPE="fme_int64"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="decimal(20,0)"
 #!   FME_TYPE="fme_uint64"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="largeint"
 #!   FME_TYPE="fme_uint32"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="logical"
 #!   FME_TYPE="fme_boolean"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="smallint"
 #!   FME_TYPE="fme_int16"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="integer"
 #!   FME_TYPE="fme_uint16"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="smallint"
 #!   FME_TYPE="fme_int8"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="smallint"
 #!   FME_TYPE="fme_uint8"
-#!   FORMAT="JPEG"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
@@ -1038,102 +1038,6 @@
 #! <GEOM_TYPES>
 #! <GEOM_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="pngraster_raster"
-#!   FME_TYPE="fme_raster"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="pngraster_none"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_text"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_arc"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_area"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_ellipse"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_rectangle"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_rounded_rectangle"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_solid"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_point_cloud"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="pngraster_none"
-#!   FME_TYPE="fme_feature_table"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="pngraster_none"
-#!   FME_TYPE="fme_collection"
-#!   FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
 #!   FORMAT_TYPE="jpeg_raster"
 #!   FME_TYPE="fme_raster"
 #!   FORMAT="JPEG"
@@ -1227,6 +1131,102 @@
 #!   FORMAT_TYPE="jpeg_none"
 #!   FME_TYPE="fme_collection"
 #!   FORMAT="JPEG"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="pngraster_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="pngraster_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="pngraster_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="pngraster_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="PNGRASTER"
 #! />
 #! <GEOM_TYPE
 #!   IS_SOURCE="false"
@@ -1884,11 +1884,6 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_11 y tile number:"
-#!   DEFAULT_VALUE="9"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_13 x tile number:"
 #!   DEFAULT_VALUE="18"
 #!   IS_STAND_ALONE="true"
@@ -2004,6 +1999,11 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_11 y tile number:"
+#!   DEFAULT_VALUE="9"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_12 y tile number:"
 #!   DEFAULT_VALUE="9"
 #!   IS_STAND_ALONE="true"
@@ -2074,6 +2074,66 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_1 longitude :"
+#!   DEFAULT_VALUE="22.5"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_2 longitude :"
+#!   DEFAULT_VALUE="22.5"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_3 longitude :"
+#!   DEFAULT_VALUE="22.5"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_4 longitude :"
+#!   DEFAULT_VALUE="33.75"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_5 longitude :"
+#!   DEFAULT_VALUE="33.75"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_6 longitude :"
+#!   DEFAULT_VALUE="33.75"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_7 longitude :"
+#!   DEFAULT_VALUE="45.0"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_8 longitude :"
+#!   DEFAULT_VALUE="45.0"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_9 longitude :"
+#!   DEFAULT_VALUE="45.0"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_10 longitude :"
+#!   DEFAULT_VALUE="22.5"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_11 longitude :"
+#!   DEFAULT_VALUE="22.5"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_12 longitude :"
+#!   DEFAULT_VALUE="22.5"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_13 longitude :"
 #!   DEFAULT_VALUE="22.5"
 #!   IS_STAND_ALONE="true"
@@ -2139,6 +2199,66 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_1 latitude :"
+#!   DEFAULT_VALUE="61.60639637138628"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_2 latitude :"
+#!   DEFAULT_VALUE="55.77657301866769"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_3 latitude :"
+#!   DEFAULT_VALUE="48.92249926375824"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_4 latitude :"
+#!   DEFAULT_VALUE="61.60639637138628"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_5 latitude :"
+#!   DEFAULT_VALUE="55.77657301866769"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_6 latitude :"
+#!   DEFAULT_VALUE="48.92249926375824"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_7 latitude :"
+#!   DEFAULT_VALUE="61.60639637138628"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_8 latitude :"
+#!   DEFAULT_VALUE="55.77657301866769"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_9 latitude :"
+#!   DEFAULT_VALUE="48.92249926375824"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_10 latitude :"
+#!   DEFAULT_VALUE="61.60639637138628"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_11 latitude :"
+#!   DEFAULT_VALUE="61.60639637138628"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_12 latitude :"
+#!   DEFAULT_VALUE="61.60639637138628"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_13 latitude :"
 #!   DEFAULT_VALUE="61.60639637138628"
 #!   IS_STAND_ALONE="true"
@@ -2200,126 +2320,6 @@
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_25 latitude :"
-#!   DEFAULT_VALUE="61.60639637138628"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_1 longitude :"
-#!   DEFAULT_VALUE="22.5"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_2 longitude :"
-#!   DEFAULT_VALUE="22.5"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_3 longitude :"
-#!   DEFAULT_VALUE="22.5"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_4 longitude :"
-#!   DEFAULT_VALUE="33.75"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_5 longitude :"
-#!   DEFAULT_VALUE="33.75"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_6 longitude :"
-#!   DEFAULT_VALUE="33.75"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_7 longitude :"
-#!   DEFAULT_VALUE="45.0"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_8 longitude :"
-#!   DEFAULT_VALUE="45.0"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_9 longitude :"
-#!   DEFAULT_VALUE="45.0"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_10 longitude :"
-#!   DEFAULT_VALUE="22.5"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_11 longitude :"
-#!   DEFAULT_VALUE="22.5"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR x_deg_12 longitude :"
-#!   DEFAULT_VALUE="22.5"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_1 latitude :"
-#!   DEFAULT_VALUE="61.60639637138628"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_2 latitude :"
-#!   DEFAULT_VALUE="55.77657301866769"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_3 latitude :"
-#!   DEFAULT_VALUE="48.92249926375824"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_4 latitude :"
-#!   DEFAULT_VALUE="61.60639637138628"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_5 latitude :"
-#!   DEFAULT_VALUE="55.77657301866769"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_6 latitude :"
-#!   DEFAULT_VALUE="48.92249926375824"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_7 latitude :"
-#!   DEFAULT_VALUE="61.60639637138628"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_8 latitude :"
-#!   DEFAULT_VALUE="55.77657301866769"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_9 latitude :"
-#!   DEFAULT_VALUE="48.92249926375824"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_10 latitude :"
-#!   DEFAULT_VALUE="61.60639637138628"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_11 latitude :"
-#!   DEFAULT_VALUE="61.60639637138628"
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR y_deg_12 latitude :"
 #!   DEFAULT_VALUE="61.60639637138628"
 #!   IS_STAND_ALONE="true"
 #! />
@@ -2479,7 +2479,7 @@
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI LITERAL TEXT BASEMAPE URL of the basemap:"
+#!   GUI_LINE="GUI TEXT_OR_ATTR BASEMAPE URL of the basemap:"
 #!   DEFAULT_VALUE="https://a.tile.opentopomap.org"
 #!   IS_STAND_ALONE="true"
 #! />
@@ -5257,51 +5257,44 @@
 #! </BREAKPOINTS>
 #! <ATTR_LINKS>
 #! <ATTR_LINK
-#!   IDENTIFIER="196803"
+#!   IDENTIFIER="131267"
 #!   SOURCE_NODE="69"
 #!   TARGET_NODE="194"
 #!   SOURCE_PORT_DESC="ao 0 19 INSIDE"
 #!   TARGET_PORT_DESC="19"
 #! />
 #! <ATTR_LINK
-#!   IDENTIFIER="262339"
+#!   IDENTIFIER="65731"
 #!   SOURCE_NODE="69"
 #!   TARGET_NODE="194"
 #!   SOURCE_PORT_DESC="ao 0 20 INSIDE"
 #!   TARGET_PORT_DESC="20"
 #! />
 #! <ATTR_LINK
-#!   IDENTIFIER="196673"
+#!   IDENTIFIER="262209"
 #!   SOURCE_NODE="84"
 #!   TARGET_NODE="55"
 #!   SOURCE_PORT_DESC="ao 0 19 OUTPUT"
 #!   TARGET_PORT_DESC="19"
 #! />
 #! <ATTR_LINK
-#!   IDENTIFIER="262209"
+#!   IDENTIFIER="196673"
 #!   SOURCE_NODE="84"
 #!   TARGET_NODE="55"
 #!   SOURCE_PORT_DESC="ao 0 20 OUTPUT"
 #!   TARGET_PORT_DESC="20"
-#! />
-#! <ATTR_LINK
-#!   IDENTIFIER="196700"
-#!   SOURCE_NODE="84"
-#!   TARGET_NODE="64"
-#!   SOURCE_PORT_DESC="ao 0 19 OUTPUT"
-#!   TARGET_PORT_DESC="19"
 #! />
 #! <ATTR_LINK
 #!   IDENTIFIER="262236"
 #!   SOURCE_NODE="84"
 #!   TARGET_NODE="64"
-#!   SOURCE_PORT_DESC="ao 0 20 OUTPUT"
-#!   TARGET_PORT_DESC="20"
+#!   SOURCE_PORT_DESC="ao 0 19 OUTPUT"
+#!   TARGET_PORT_DESC="19"
 #! />
 #! <ATTR_LINK
-#!   IDENTIFIER="393302"
-#!   SOURCE_NODE="85"
-#!   TARGET_NODE="49"
+#!   IDENTIFIER="196700"
+#!   SOURCE_NODE="84"
+#!   TARGET_NODE="64"
 #!   SOURCE_PORT_DESC="ao 0 20 OUTPUT"
 #!   TARGET_PORT_DESC="20"
 #! />
@@ -5309,18 +5302,25 @@
 #!   IDENTIFIER="327766"
 #!   SOURCE_NODE="85"
 #!   TARGET_NODE="49"
+#!   SOURCE_PORT_DESC="ao 0 20 OUTPUT"
+#!   TARGET_PORT_DESC="20"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="393302"
+#!   SOURCE_NODE="85"
+#!   TARGET_NODE="49"
 #!   SOURCE_PORT_DESC="ao 0 19 OUTPUT"
 #!   TARGET_PORT_DESC="19"
 #! />
 #! <ATTR_LINK
-#!   IDENTIFIER="262271"
+#!   IDENTIFIER="196735"
 #!   SOURCE_NODE="122"
 #!   TARGET_NODE="55"
 #!   SOURCE_PORT_DESC="ao 0 20 TILES"
 #!   TARGET_PORT_DESC="20"
 #! />
 #! <ATTR_LINK
-#!   IDENTIFIER="196735"
+#!   IDENTIFIER="262271"
 #!   SOURCE_NODE="122"
 #!   TARGET_NODE="55"
 #!   SOURCE_PORT_DESC="ao 0 19 TILES"
@@ -5330,43 +5330,43 @@
 #!   IDENTIFIER="262275"
 #!   SOURCE_NODE="122"
 #!   TARGET_NODE="64"
-#!   SOURCE_PORT_DESC="ao 0 20 TILES"
-#!   TARGET_PORT_DESC="20"
+#!   SOURCE_PORT_DESC="ao 0 19 TILES"
+#!   TARGET_PORT_DESC="19"
 #! />
 #! <ATTR_LINK
 #!   IDENTIFIER="196739"
 #!   SOURCE_NODE="122"
 #!   TARGET_NODE="64"
-#!   SOURCE_PORT_DESC="ao 0 19 TILES"
-#!   TARGET_PORT_DESC="19"
+#!   SOURCE_PORT_DESC="ao 0 20 TILES"
+#!   TARGET_PORT_DESC="20"
 #! />
 #! <ATTR_LINK
-#!   IDENTIFIER="327816"
-#!   SOURCE_NODE="122"
-#!   TARGET_NODE="135"
-#!   SOURCE_PORT_DESC="ao 0 19 TILES"
-#!   TARGET_PORT_DESC="19"
-#! />
-#! <ATTR_LINK
-#!   IDENTIFIER="393352"
+#!   IDENTIFIER="196744"
 #!   SOURCE_NODE="122"
 #!   TARGET_NODE="135"
 #!   SOURCE_PORT_DESC="ao 0 20 TILES"
 #!   TARGET_PORT_DESC="20"
 #! />
 #! <ATTR_LINK
-#!   IDENTIFIER="393350"
-#!   SOURCE_NODE="120"
-#!   TARGET_NODE="49"
-#!   SOURCE_PORT_DESC="ao 1 20 &lt;lt&gt;lt&lt;gt&gt;UNFILTERED&lt;lt&gt;gt&lt;gt&gt;"
-#!   TARGET_PORT_DESC="20"
+#!   IDENTIFIER="262280"
+#!   SOURCE_NODE="122"
+#!   TARGET_NODE="135"
+#!   SOURCE_PORT_DESC="ao 0 19 TILES"
+#!   TARGET_PORT_DESC="19"
 #! />
 #! <ATTR_LINK
-#!   IDENTIFIER="327814"
+#!   IDENTIFIER="131206"
 #!   SOURCE_NODE="120"
 #!   TARGET_NODE="49"
 #!   SOURCE_PORT_DESC="ao 1 19 &lt;lt&gt;lt&lt;gt&gt;UNFILTERED&lt;lt&gt;gt&lt;gt&gt;"
 #!   TARGET_PORT_DESC="19"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="65670"
+#!   SOURCE_NODE="120"
+#!   TARGET_NODE="49"
+#!   SOURCE_PORT_DESC="ao 1 20 &lt;lt&gt;lt&lt;gt&gt;UNFILTERED&lt;lt&gt;gt&lt;gt&gt;"
+#!   TARGET_PORT_DESC="20"
 #! />
 #! </ATTR_LINKS>
 #! <SUBDOCUMENTS>
@@ -5403,8 +5403,6 @@ DEFAULT_MACRO x_11 18
 GUI OPTIONAL TEXT x_11 x tile number:
 DEFAULT_MACRO x_12 18
 GUI OPTIONAL TEXT x_12 x tile number:
-DEFAULT_MACRO y_11 9
-GUI OPTIONAL TEXT y_11 y tile number:
 DEFAULT_MACRO x_13 18
 GUI OPTIONAL TEXT x_13 x tile number:
 DEFAULT_MACRO x_14 18
@@ -5451,6 +5449,8 @@ DEFAULT_MACRO y_9 11
 GUI OPTIONAL TEXT y_9 y tile number:
 DEFAULT_MACRO y_10 9
 GUI OPTIONAL TEXT y_10 y tile number:
+DEFAULT_MACRO y_11 9
+GUI OPTIONAL TEXT y_11 y tile number:
 DEFAULT_MACRO y_12 9
 GUI OPTIONAL TEXT y_12 y tile number:
 DEFAULT_MACRO y_13 9
@@ -5479,6 +5479,30 @@ DEFAULT_MACRO y_24 9
 GUI OPTIONAL TEXT y_24 y tile number:
 DEFAULT_MACRO y_25 9
 GUI OPTIONAL TEXT y_25 y tile number:
+DEFAULT_MACRO x_deg_1 22.5
+GUI OPTIONAL TEXT x_deg_1 longitude :
+DEFAULT_MACRO x_deg_2 22.5
+GUI OPTIONAL TEXT x_deg_2 longitude :
+DEFAULT_MACRO x_deg_3 22.5
+GUI OPTIONAL TEXT x_deg_3 longitude :
+DEFAULT_MACRO x_deg_4 33.75
+GUI OPTIONAL TEXT x_deg_4 longitude :
+DEFAULT_MACRO x_deg_5 33.75
+GUI OPTIONAL TEXT x_deg_5 longitude :
+DEFAULT_MACRO x_deg_6 33.75
+GUI OPTIONAL TEXT x_deg_6 longitude :
+DEFAULT_MACRO x_deg_7 45.0
+GUI OPTIONAL TEXT x_deg_7 longitude :
+DEFAULT_MACRO x_deg_8 45.0
+GUI OPTIONAL TEXT x_deg_8 longitude :
+DEFAULT_MACRO x_deg_9 45.0
+GUI OPTIONAL TEXT x_deg_9 longitude :
+DEFAULT_MACRO x_deg_10 22.5
+GUI OPTIONAL TEXT x_deg_10 longitude :
+DEFAULT_MACRO x_deg_11 22.5
+GUI OPTIONAL TEXT x_deg_11 longitude :
+DEFAULT_MACRO x_deg_12 22.5
+GUI OPTIONAL TEXT x_deg_12 longitude :
 DEFAULT_MACRO x_deg_13 22.5
 GUI OPTIONAL TEXT x_deg_13 longitude :
 DEFAULT_MACRO x_deg_14 22.5
@@ -5505,6 +5529,30 @@ DEFAULT_MACRO x_deg_24 22.5
 GUI OPTIONAL TEXT x_deg_24 longitude :
 DEFAULT_MACRO x_deg_25 22.5
 GUI OPTIONAL TEXT x_deg_25 longitude :
+DEFAULT_MACRO y_deg_1 61.60639637138628
+GUI OPTIONAL TEXT y_deg_1 latitude :
+DEFAULT_MACRO y_deg_2 55.77657301866769
+GUI OPTIONAL TEXT y_deg_2 latitude :
+DEFAULT_MACRO y_deg_3 48.92249926375824
+GUI OPTIONAL TEXT y_deg_3 latitude :
+DEFAULT_MACRO y_deg_4 61.60639637138628
+GUI OPTIONAL TEXT y_deg_4 latitude :
+DEFAULT_MACRO y_deg_5 55.77657301866769
+GUI OPTIONAL TEXT y_deg_5 latitude :
+DEFAULT_MACRO y_deg_6 48.92249926375824
+GUI OPTIONAL TEXT y_deg_6 latitude :
+DEFAULT_MACRO y_deg_7 61.60639637138628
+GUI OPTIONAL TEXT y_deg_7 latitude :
+DEFAULT_MACRO y_deg_8 55.77657301866769
+GUI OPTIONAL TEXT y_deg_8 latitude :
+DEFAULT_MACRO y_deg_9 48.92249926375824
+GUI OPTIONAL TEXT y_deg_9 latitude :
+DEFAULT_MACRO y_deg_10 61.60639637138628
+GUI OPTIONAL TEXT y_deg_10 latitude :
+DEFAULT_MACRO y_deg_11 61.60639637138628
+GUI OPTIONAL TEXT y_deg_11 latitude :
+DEFAULT_MACRO y_deg_12 61.60639637138628
+GUI OPTIONAL TEXT y_deg_12 latitude :
 DEFAULT_MACRO y_deg_13 61.60639637138628
 GUI OPTIONAL TEXT y_deg_13 latitude :
 DEFAULT_MACRO y_deg_14 61.60639637138628
@@ -5531,54 +5579,6 @@ DEFAULT_MACRO y_deg_24 61.60639637138628
 GUI OPTIONAL TEXT y_deg_24 latitude :
 DEFAULT_MACRO y_deg_25 61.60639637138628
 GUI OPTIONAL TEXT y_deg_25 latitude :
-DEFAULT_MACRO x_deg_1 22.5
-GUI OPTIONAL TEXT x_deg_1 longitude :
-DEFAULT_MACRO x_deg_2 22.5
-GUI OPTIONAL TEXT x_deg_2 longitude :
-DEFAULT_MACRO x_deg_3 22.5
-GUI OPTIONAL TEXT x_deg_3 longitude :
-DEFAULT_MACRO x_deg_4 33.75
-GUI OPTIONAL TEXT x_deg_4 longitude :
-DEFAULT_MACRO x_deg_5 33.75
-GUI OPTIONAL TEXT x_deg_5 longitude :
-DEFAULT_MACRO x_deg_6 33.75
-GUI OPTIONAL TEXT x_deg_6 longitude :
-DEFAULT_MACRO x_deg_7 45.0
-GUI OPTIONAL TEXT x_deg_7 longitude :
-DEFAULT_MACRO x_deg_8 45.0
-GUI OPTIONAL TEXT x_deg_8 longitude :
-DEFAULT_MACRO x_deg_9 45.0
-GUI OPTIONAL TEXT x_deg_9 longitude :
-DEFAULT_MACRO x_deg_10 22.5
-GUI OPTIONAL TEXT x_deg_10 longitude :
-DEFAULT_MACRO x_deg_11 22.5
-GUI OPTIONAL TEXT x_deg_11 longitude :
-DEFAULT_MACRO x_deg_12 22.5
-GUI OPTIONAL TEXT x_deg_12 longitude :
-DEFAULT_MACRO y_deg_1 61.60639637138628
-GUI OPTIONAL TEXT y_deg_1 latitude :
-DEFAULT_MACRO y_deg_2 55.77657301866769
-GUI OPTIONAL TEXT y_deg_2 latitude :
-DEFAULT_MACRO y_deg_3 48.92249926375824
-GUI OPTIONAL TEXT y_deg_3 latitude :
-DEFAULT_MACRO y_deg_4 61.60639637138628
-GUI OPTIONAL TEXT y_deg_4 latitude :
-DEFAULT_MACRO y_deg_5 55.77657301866769
-GUI OPTIONAL TEXT y_deg_5 latitude :
-DEFAULT_MACRO y_deg_6 48.92249926375824
-GUI OPTIONAL TEXT y_deg_6 latitude :
-DEFAULT_MACRO y_deg_7 61.60639637138628
-GUI OPTIONAL TEXT y_deg_7 latitude :
-DEFAULT_MACRO y_deg_8 55.77657301866769
-GUI OPTIONAL TEXT y_deg_8 latitude :
-DEFAULT_MACRO y_deg_9 48.92249926375824
-GUI OPTIONAL TEXT y_deg_9 latitude :
-DEFAULT_MACRO y_deg_10 61.60639637138628
-GUI OPTIONAL TEXT y_deg_10 latitude :
-DEFAULT_MACRO y_deg_11 61.60639637138628
-GUI OPTIONAL TEXT y_deg_11 latitude :
-DEFAULT_MACRO y_deg_12 61.60639637138628
-GUI OPTIONAL TEXT y_deg_12 latitude :
 DEFAULT_MACRO y_deg_b_1 55.77657301866769
 GUI OPTIONAL TEXT y_deg_b_1 latitude below :
 DEFAULT_MACRO y_deg_b_2 48.92249926375824
@@ -6198,7 +6198,7 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME RasterBandRemover_<Rejected> INPUT FEATURE_TYPE RasterBandRemover_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, RasterBandRemover<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC RasterBandRemover_2_OUTPUT_1_zwQHVYYhKJg= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,6,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> COORDINATE_SYSTEM LL-WGS84 GEOMETRY    ROUTE FME_GENERIC RasterTiler_3_TILES_1_VFLo6CfoXVE= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,6,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> COORDINATE_SYSTEM LL-WGS84 GEOMETRY    ROUTE FME_GENERIC RasterTiler_2_TILES_1_w4lGyFT2ZCE= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,6,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster100<closeparen> COORDINATE_SYSTEM LL-WGS84 GEOMETRY    ROUTE FME_GENERIC RasterBandRemover_OUTPUT_0_xooHzBWo5JQ= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> GEOMETRY    ROUTE FME_GENERIC TestFilter_4_<lt>UNFILTERED<gt>_1_3AbVs4HGQD4= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> GEOMETRY    ROUTE FME_GENERIC Clipper_3_INSIDE_3_KknAi6+Bac0= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>Raster100<closeparen> GEOMETRY    ROUTE FME_GENERIC RasterBandRemover_OUTPUT_1_zLfa9PJZANA= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>JPEG200000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>JPEG200000<closeparen> GEOMETRY    ROUTE FME_GENERIC TestFilter_4_<lt>UNFILTERED<gt>_0_EmyoTWcXZS0= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>JPEG200000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>JPEG200000<closeparen> GEOMETRY    ROUTE FME_GENERIC Clipper_3_INSIDE_2_ka8Q39JYxFA= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>JPEG20000000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>JPEG20000000<closeparen> GEOMETRY    ROUTE FME_GENERIC RasterTiler_2_TILES_0_Q8Yb2tNPHDA= TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,5,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster100<closeparen> COORDINATE_SYSTEM LL-WGS84 GEOMETRY    ROUTE FME_GENERIC RasterTiler_3_TILES_2_8BIa9EFO66M= TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,5,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster101<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster101<closeparen> COORDINATE_SYSTEM LL-WGS84 GEOMETRY    ROUTE FME_GENERIC RasterBandRemover_2_OUTPUT_0_3cAA+P66JHE= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,4,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> GEOMETRY    ROUTE FME_GENERIC RasterTiler_3_TILES_0_+AiI7UAHlfY= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,4,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> GEOMETRY    ROUTE FME_GENERIC RasterTiler_2_TILES_2_VccR9Ol0GS4= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,4,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster100<closeparen> GEOMETRY    ROUTE FME_GENERIC Clipper_2_INSIDE_0_ZJUBPYyCRyM= TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> GEOMETRY    ROUTE FME_GENERIC Clipper_3_INSIDE_0_k3FPXFzPkDE= TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>Raster100<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Clipper_2_INSIDE_0_ZJUBPYyCRyM= TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> GEOMETRY    ROUTE FME_GENERIC Clipper_3_INSIDE_0_k3FPXFzPkDE= TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>Raster100<closeparen> GEOMETRY    ROUTE FME_GENERIC RasterBandRemover_2_OUTPUT_1_zwQHVYYhKJg= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,6,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> COORDINATE_SYSTEM LL-WGS84 GEOMETRY    ROUTE FME_GENERIC RasterTiler_3_TILES_1_VFLo6CfoXVE= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,6,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> COORDINATE_SYSTEM LL-WGS84 GEOMETRY    ROUTE FME_GENERIC RasterTiler_2_TILES_1_w4lGyFT2ZCE= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,6,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster100<closeparen> COORDINATE_SYSTEM LL-WGS84 GEOMETRY    ROUTE FME_GENERIC RasterBandRemover_OUTPUT_1_zLfa9PJZANA= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>JPEG200000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>JPEG200000<closeparen> GEOMETRY    ROUTE FME_GENERIC TestFilter_4_<lt>UNFILTERED<gt>_0_EmyoTWcXZS0= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>JPEG200000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>JPEG200000<closeparen> GEOMETRY    ROUTE FME_GENERIC Clipper_3_INSIDE_2_ka8Q39JYxFA= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>JPEG20000000<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>JPEG20000000<closeparen> GEOMETRY    ROUTE FME_GENERIC RasterBandRemover_OUTPUT_0_xooHzBWo5JQ= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> GEOMETRY    ROUTE FME_GENERIC TestFilter_4_<lt>UNFILTERED<gt>_1_3AbVs4HGQD4= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> GEOMETRY    ROUTE FME_GENERIC Clipper_3_INSIDE_3_KknAi6+Bac0= TO JPEG __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>basemap_$(ISO_code$encode$encode)<comma>Raster100<closeparen> GEOMETRY    ROUTE FME_GENERIC RasterTiler_2_TILES_0_Q8Yb2tNPHDA= TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,5,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster100<closeparen> COORDINATE_SYSTEM LL-WGS84 GEOMETRY    ROUTE FME_GENERIC RasterTiler_3_TILES_2_8BIa9EFO66M= TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,5,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster101<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster101<closeparen> COORDINATE_SYSTEM LL-WGS84 GEOMETRY    ROUTE FME_GENERIC RasterBandRemover_2_OUTPUT_0_3cAA+P66JHE= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,4,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> GEOMETRY    ROUTE FME_GENERIC RasterTiler_3_TILES_0_+AiI7UAHlfY= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.name<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>_value<comma>_http_headers<lt>opencurly<gt><lt>closecurly<gt>.value<closeparen>,multi_writer_id,4,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster1<closeparen> GEOMETRY    ROUTE FME_GENERIC RasterTiler_2_TILES_2_VccR9Ol0GS4= TO JPEG2000 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,4,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma>subbasemap_$(ISO_code$encode$encode)<comma>Raster100<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
@@ -6208,22 +6208,22 @@ JPEG2000_1_DEF JPEG20000000   jpeg2000_compression_level   75   jpeg2000_layers 
 # -------------------------------------------------------------------------
 JPEG2000_1_DEF JPEG200000   jpeg2000_compression_level   75   jpeg2000_layers              1   jpeg2000_profile             profile0   jpeg2000_tab_file_generation no   jpeg2000_tile_size_x         ""   jpeg2000_tile_size_y         ""
 # -------------------------------------------------------------------------
-PNGRASTER_1_DEF Raster100   pngraster_world_file_generation yes   pngraster_tab_file_generation no   pngraster_optimize           No_optimization   _clipped                     char(200)
-# -------------------------------------------------------------------------
 PNGRASTER_1_DEF Raster1   pngraster_world_file_generation yes   pngraster_tab_file_generation no   pngraster_optimize           No_optimization   _creation_instance           decimal(20,0)   url                          char(200)   xtile                        char(200)   ytile                        char(200)   xcorner                      char(200)   ycorner                      char(200)   _copynum                     char(200)   UL_x                         char(200)   UL_y                         char(200)   UR_x                         char(200)   UR_y                         char(200)   LL_x                         char(200)   LL_y                         char(200)   LR_x                         char(200)   LR_y                         char(200)   URL_BM                       char(200)   ycorner_b                    char(200)   _http_status_code            char(200)   _http_headers{}_name         char(200)   _http_headers{}_value        char(200)   _clipped                     char(200)
 # -------------------------------------------------------------------------
-JPEG_2_DEF Raster100   jpeg_world_file_generation   yes   jpeg_compression_level       28   jpeg_tab_file_generation     no   jpeg_optimize                no   jpeg_write_exif_tags         yes   _clipped                     char(200)
+PNGRASTER_1_DEF Raster100   pngraster_world_file_generation yes   pngraster_tab_file_generation no   pngraster_optimize           No_optimization   _clipped                     char(200)
 # -------------------------------------------------------------------------
 JPEG_2_DEF Raster1   jpeg_world_file_generation   yes   jpeg_compression_level       28   jpeg_tab_file_generation     no   jpeg_optimize                no   jpeg_write_exif_tags         yes   _creation_instance           decimal(20,0)   url                          char(200)   xtile                        char(200)   ytile                        char(200)   xcorner                      char(200)   ycorner                      char(200)   _copynum                     char(200)   UL_x                         char(200)   UL_y                         char(200)   UR_x                         char(200)   UR_y                         char(200)   LL_x                         char(200)   LL_y                         char(200)   LR_x                         char(200)   LR_y                         char(200)   URL_BM                       char(200)   ycorner_b                    char(200)   _http_status_code            char(200)   _http_headers{}_name         char(200)   _http_headers{}_value        char(200)   _clipped                     char(200)
 # -------------------------------------------------------------------------
-JPEG2000_2_DEF Raster100   jpeg2000_compression_level   75   jpeg2000_layers              1   jpeg2000_profile             profile0   jpeg2000_tab_file_generation no   jpeg2000_tile_size_x         ""   jpeg2000_tile_size_y         ""   _clipped                     char(200)   _raster_index                char(200)   _tile_column                 char(200)   _tile_row                    char(200)   _num_tile_columns            char(200)   _num_tile_rows               char(200)
+JPEG_2_DEF Raster100   jpeg_world_file_generation   yes   jpeg_compression_level       28   jpeg_tab_file_generation     no   jpeg_optimize                no   jpeg_write_exif_tags         yes   _clipped                     char(200)
 # -------------------------------------------------------------------------
 JPEG2000_2_DEF Raster1   jpeg2000_compression_level   75   jpeg2000_layers              1   jpeg2000_profile             profile0   jpeg2000_tab_file_generation no   jpeg2000_tile_size_x         ""   jpeg2000_tile_size_y         ""   _creation_instance           decimal(20,0)   url                          char(200)   xtile                        char(200)   ytile                        char(200)   xcorner                      char(200)   ycorner                      char(200)   _copynum                     char(200)   UL_x                         char(200)   UL_y                         char(200)   UR_x                         char(200)   UR_y                         char(200)   LL_x                         char(200)   LL_y                         char(200)   LR_x                         char(200)   LR_y                         char(200)   URL_BM                       char(200)   ycorner_b                    char(200)   _http_status_code            char(200)   _http_headers{}_name         char(200)   _http_headers{}_value        char(200)   _clipped                     char(200)   _raster_index                char(200)   _tile_column                 char(200)   _tile_row                    char(200)   _num_tile_columns            char(200)   _num_tile_rows               char(200)
+# -------------------------------------------------------------------------
+JPEG2000_2_DEF Raster100   jpeg2000_compression_level   75   jpeg2000_layers              1   jpeg2000_profile             profile0   jpeg2000_tab_file_generation no   jpeg2000_tile_size_x         ""   jpeg2000_tile_size_y         ""   _clipped                     char(200)   _raster_index                char(200)   _tile_column                 char(200)   _tile_row                    char(200)   _num_tile_columns            char(200)   _num_tile_rows               char(200)
 # -------------------------------------------------------------------------
 PNGRASTER_2_DEF Raster100   pngraster_world_file_generation yes   pngraster_tab_file_generation no   pngraster_optimize           No_optimization   _clipped                     char(200)   _raster_index                char(200)   _tile_column                 char(200)   _tile_row                    char(200)   _num_tile_columns            char(200)   _num_tile_rows               char(200)
 # -------------------------------------------------------------------------
 PNGRASTER_2_DEF Raster101   pngraster_world_file_generation yes   pngraster_tab_file_generation no   pngraster_optimize           No_optimization   _creation_instance           decimal(20,0)   url                          char(200)   xtile                        char(200)   ytile                        char(200)   xcorner                      char(200)   ycorner                      char(200)   _copynum                     char(200)   UL_x                         char(200)   UL_y                         char(200)   UR_x                         char(200)   UR_y                         char(200)   LL_x                         char(200)   LL_y                         char(200)   LR_x                         char(200)   LR_y                         char(200)   URL_BM                       char(200)   ycorner_b                    char(200)   _http_status_code            char(200)   _http_headers{}_name         char(200)   _http_headers{}_value        char(200)   _clipped                     char(200)   _raster_index                char(200)   _tile_column                 char(200)   _tile_row                    char(200)   _num_tile_columns            char(200)   _num_tile_rows               char(200)
 # -------------------------------------------------------------------------
-JPEG_3_DEF Raster100   jpeg_world_file_generation   yes   jpeg_compression_level       28   jpeg_tab_file_generation     no   jpeg_optimize                no   jpeg_write_exif_tags         yes   _clipped                     char(200)   _raster_index                char(200)   _tile_column                 char(200)   _tile_row                    char(200)   _num_tile_columns            char(200)   _num_tile_rows               char(200)
-# -------------------------------------------------------------------------
 JPEG_3_DEF Raster1   jpeg_world_file_generation   yes   jpeg_compression_level       28   jpeg_tab_file_generation     no   jpeg_optimize                no   jpeg_write_exif_tags         yes   _creation_instance           decimal(20,0)   url                          char(200)   xtile                        char(200)   ytile                        char(200)   xcorner                      char(200)   ycorner                      char(200)   _copynum                     char(200)   UL_x                         char(200)   UL_y                         char(200)   UR_x                         char(200)   UR_y                         char(200)   LL_x                         char(200)   LL_y                         char(200)   LR_x                         char(200)   LR_y                         char(200)   URL_BM                       char(200)   ycorner_b                    char(200)   _http_status_code            char(200)   _http_headers{}_name         char(200)   _http_headers{}_value        char(200)   _clipped                     char(200)   _raster_index                char(200)   _tile_column                 char(200)   _tile_row                    char(200)   _num_tile_columns            char(200)   _num_tile_rows               char(200)
+# -------------------------------------------------------------------------
+JPEG_3_DEF Raster100   jpeg_world_file_generation   yes   jpeg_compression_level       28   jpeg_tab_file_generation     no   jpeg_optimize                no   jpeg_write_exif_tags         yes   _clipped                     char(200)   _raster_index                char(200)   _tile_column                 char(200)   _tile_row                    char(200)   _num_tile_columns            char(200)   _num_tile_rows               char(200)
